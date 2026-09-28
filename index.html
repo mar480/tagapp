@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tally is a workspace for preparing, validating and filing accessible iXBRL accounts.">
+  <title>Tally — iXBRL workspace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#workspace">Skip to workspace</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Primary navigation">
+      <a class="brand" href="#" aria-label="Tally home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span>Tally</span>
+      </a>
+      <nav class="main-nav">
+        <p class="nav-label">Workspace</p>
+        <a class="nav-item active" href="#workspace" aria-current="page"><span data-icon="grid"></span>Tagger</a>
+        <a class="nav-item" href="#"><span data-icon="folder"></span>Reports <b>4</b></a>
+        <a class="nav-item" href="#"><span data-icon="book"></span>Taxonomies</a>
+        <p class="nav-label">Quality</p>
+        <a class="nav-item" href="#validation"><span data-icon="check"></span>Validation <em>3</em></a>
+        <a class="nav-item" href="#"><span data-icon="branch"></span>Rule sets</a>
+        <a class="nav-item" href="#"><span data-icon="send"></span>Filings</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <a class="nav-item" href="#"><span data-icon="help"></span>Help centre</a>
+        <a class="nav-item" href="#"><span data-icon="settings"></span>Settings</a>
+        <div class="user-card">
+          <div class="avatar">MA</div>
+          <div><strong>Marvin Adams</strong><small>Workspace admin</small></div>
+          <button aria-label="Open account menu">•••</button>
+        </div>
+      </div>
+    </aside>
+
+    <main id="workspace">
+      <header class="topbar">
+        <div class="breadcrumb"><span>Reports</span><b>/</b><strong>Northstar Labs Ltd</strong><button class="status"><i></i>Draft</button></div>
+        <div class="top-actions">
+          <button class="icon-button" aria-label="Share report" title="Share"><span data-icon="share"></span></button>
+          <button class="secondary" id="validateBtn"><span data-icon="spark"></span>Validate</button>
+          <button class="primary" id="exportBtn">Review &amp; file <span aria-hidden="true">→</span></button>
+        </div>
+      </header>
+
+      <section class="progress-band" aria-label="Report progress">
+        <div class="progress-copy"><span>67%</span><div><strong>Tagging in progress</strong><small>128 of 191 disclosures tagged</small></div></div>
+        <div class="progress-track"><i></i></div>
+        <div class="autosave"><span data-icon="cloud"></span>Saved just now</div>
+      </section>
+
+      <div class="workbench">
+        <aside class="taxonomy-panel" aria-label="Taxonomy concepts">
+          <div class="panel-title">
+            <div><p class="eyebrow">UK-FRS-102</p><h2>Taxonomy</h2></div>
+            <button class="icon-button" aria-label="Taxonomy options">•••</button>
+          </div>
+          <label class="search"><span data-icon="search"></span><input id="conceptSearch" type="search" placeholder="Search concepts" autocomplete="off"><kbd>⌘ K</kbd></label>
+          <div class="taxonomy-tabs" role="tablist">
+            <button class="active" role="tab" aria-selected="true">Concepts</button>
+            <button role="tab" aria-selected="false">Dimensions</button>
+          </div>
+          <div class="concept-list" id="conceptList">
+            <button class="tree-row open"><span class="chevron">⌄</span><span class="folder-icon"></span><strong>Statement of financial position</strong><small>12</small></button>
+            <div class="tree-children">
+              <button class="concept tagged" draggable="true" data-tag="uk-gaap:FixedAssets"><span>Fixed assets</span><small>Monetary</small><i>✓</i></button>
+              <button class="concept" draggable="true" data-tag="uk-gaap:CurrentAssets"><span>Current assets</span><small>Monetary</small><i>+</i></button>
+              <button class="concept" draggable="true" data-tag="uk-gaap:CashBankInHand"><span>Cash at bank and in hand</span><small>Monetary</small><i>+</i></button>
+              <button class="concept tagged" draggable="true" data-tag="uk-gaap:CreditorsDueWithinOneYear"><span>Creditors: within one year</span><small>Monetary</small><i>✓</i></button>
+              <button class="concept" draggable="true" data-tag="uk-gaap:NetCurrentAssetsLiabilities"><span>Net current assets</span><small>Monetary</small><i>+</i></button>
+            </div>
+            <button class="tree-row"><span class="chevron">›</span><span class="folder-icon"></span><strong>Income statement</strong><small>18</small></button>
+            <button class="tree-row"><span class="chevron">›</span><span class="folder-icon"></span><strong>Notes to the accounts</strong><small>46</small></button>
+            <button class="tree-row"><span class="chevron">›</span><span class="folder-icon"></span><strong>Directors' report</strong><small>9</small></button>
+          </div>
+          <div class="panel-tip"><span data-icon="bulb"></span><div><strong>Drag to tag</strong><p>Drop a concept onto a value in the report. You can refine its properties afterwards.</p></div><button aria-label="Dismiss tip">×</button></div>
+        </aside>
+
+        <section class="document-area" aria-label="Document editor">
+          <div class="document-toolbar">
+            <div class="view-switch" role="group" aria-label="Document view"><button class="active">Document</button><button>Tags <span>24</span></button></div>
+            <div class="doc-tools"><button aria-label="Zoom out">−</button><span>100%</span><button aria-label="Zoom in">+</button><i></i><button aria-label="Previous page">‹</button><span>3 / 18</span><button aria-label="Next page">›</button></div>
+          </div>
+          <div class="canvas-wrap">
+            <article class="paper" aria-label="Statement of financial position document">
+              <header class="report-header"><div class="report-logo">N</div><div><strong>NORTHSTAR LABS LTD</strong><small>Company number 09876123</small></div></header>
+              <div class="report-meta"><p>Annual report and financial statements</p><h1>Statement of financial position</h1><span>As at 31 December 2025</span></div>
+              <table class="accounts">
+                <thead><tr><th></th><th>Note</th><th>2025<br><small>£</small></th><th>2024<br><small>£</small></th></tr></thead>
+                <tbody>
+                  <tr class="section-row"><td>Fixed assets</td><td></td><td></td><td></td></tr>
+                  <tr><td>Intangible assets</td><td>8</td><td><button class="tagged-value" data-current-tag="IntangibleAssets" data-value="124500">124,500<span>Intangible assets</span></button></td><td>98,200</td></tr>
+                  <tr><td>Tangible assets</td><td>9</td><td><button class="tagged-value" data-current-tag="TangibleAssets" data-value="286400">286,400<span>Tangible assets</span></button></td><td>241,800</td></tr>
+                  <tr class="total"><td></td><td></td><td><strong>410,900</strong></td><td><strong>340,000</strong></td></tr>
+                  <tr class="section-row"><td>Current assets</td><td></td><td></td><td></td></tr>
+                  <tr><td>Debtors</td><td>10</td><td><button class="plain-value drop-target" data-value="183600">183,600</button></td><td>142,100</td></tr>
+                  <tr><td>Cash at bank and in hand</td><td></td><td><button class="suggested-value" data-value="94050">94,050<span>Suggested</span></button></td><td>76,340</td></tr>
+                  <tr class="total"><td></td><td></td><td><strong>277,650</strong></td><td><strong>218,440</strong></td></tr>
+                  <tr class="section-row"><td>Creditors: amounts falling due within one year</td><td>11</td><td><button class="tagged-value issue" data-current-tag="CreditorsDueWithinOneYear" data-value="-207150">(207,150)<span>Check sign</span></button></td><td>(174,890)</td></tr>
+                  <tr class="grand-total"><td>Net current assets</td><td></td><td>70,500</td><td>43,550</td></tr>
+                  <tr class="grand-total"><td>Total assets less current liabilities</td><td></td><td>481,400</td><td>383,550</td></tr>
+                </tbody>
+              </table>
+              <p class="report-footnote">The financial statements were approved by the board of directors and authorised for issue on 18 March 2026.</p>
+              <footer><span>Northstar Labs Ltd · Annual report 2025</span><b>7</b></footer>
+            </article>
+          </div>
+        </section>
+
+        <aside class="inspector" aria-label="Tag inspector">
+          <div class="panel-title inspector-title"><div><p class="eyebrow">Selection</p><h2>Tag details</h2></div><button class="icon-button" id="closeInspector" aria-label="Close inspector">×</button></div>
+          <div class="selection-preview"><small>SELECTED VALUE</small><strong id="selectedValue">£286,400</strong><span>Tangible assets</span></div>
+          <form id="tagForm">
+            <div class="form-section"><label for="concept">Concept</label><div class="select-like"><span class="concept-dot"></span><div><strong id="conceptLabel">Tangible assets</strong><small id="conceptId">uk-gaap:TangibleAssets</small></div><button type="button" aria-label="Change concept">⌄</button></div><p class="definition">The carrying amount of tangible assets held by the entity at the reporting date.</p></div>
+            <div class="form-section"><div class="section-heading"><label>Context</label><button type="button">Edit</button></div><div class="info-grid"><div><span>Period</span><strong>31 Dec 2025</strong></div><div><span>Entity</span><strong>09876123</strong></div></div></div>
+            <div class="form-section"><label>Value properties</label><div class="field-row"><label>Unit<select><option>GBP (£)</option><option>Pure</option><option>Shares</option></select></label><label>Scale<select><option>Units</option><option>Thousands</option><option>Millions</option></select></label></div><div class="field-row"><label>Decimals<select><option>0</option><option>INF</option><option>2</option></select></label><label>Balance<select><option>Debit</option><option>Credit</option></select></label></div></div>
+            <div class="form-section"><div class="section-heading"><label>Dimensions</label><button type="button" id="addDimension">+ Add</button></div><div class="empty-dimension" id="dimensionState">No dimensions applied</div></div>
+          </form>
+          <div class="inspector-footer"><button class="danger" id="removeTag">Remove tag</button><button class="save-tag" id="saveTag">Save changes</button></div>
+        </aside>
+      </div>
+    </main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"><span>✓</span><div><strong>Tag saved</strong><small>Your changes passed basic validation.</small></div></div>
+  <dialog id="validationModal">
+    <div class="modal-head"><span class="modal-icon">✓</span><div><p class="eyebrow">REPORT QUALITY</p><h2>Validation complete</h2></div><button id="closeModal" aria-label="Close">×</button></div>
+    <div class="score-row"><strong>94</strong><div><b>Excellent</b><span>3 items need your attention before filing.</span></div></div>
+    <div class="validation-items" id="validation">
+      <div><i class="warn">!</i><p><strong>Sign may be incorrect</strong><span>Creditors: amounts falling due within one year</span></p><button>Review</button></div>
+      <div><i>i</i><p><strong>Untagged disclosure</strong><span>Debtors · page 7</span></p><button>Review</button></div>
+      <div><i>i</i><p><strong>Suggested tag awaiting review</strong><span>Cash at bank and in hand · page 7</span></p><button>Review</button></div>
+    </div>
+    <button class="primary modal-action" id="continueBtn">Continue reviewing</button>
+  </dialog>
+  <script src="app.js"></script>
+</body>
+</html>
