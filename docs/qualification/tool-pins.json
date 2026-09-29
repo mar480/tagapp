@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "artifacts": [
+    {
+      "id": "frc2026",
+      "url": "https://www.frc.org.uk/documents/8907/FRC-2026-Taxonomy-v1.0.0.zip",
+      "filename": "FRC-2026-Taxonomy-v1.0.0.zip",
+      "size_bytes": 7467044,
+      "sha256": "ae80ae12d9d747ac531150b0051bcd67e7c9acf44313da19105b4cc013566462",
+      "use": "Local taxonomy qualification; distribution terms not cleared"
+    },
+    {
+      "id": "pdf2htmlex-probe",
+      "url": "https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/v0.18.8.rc1/pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-focal-x86_64.AppImage",
+      "filename": "pdf2htmlEX-0.18.8.rc1-focal.AppImage",
+      "size_bytes": 27639784,
+      "sha256": "11de2583a3abce5f141fd7fafb1fea2c67b15886e546d6b7675c600012e6ab8c",
+      "use": "Rejected for principal fixture: built without OpenJPEG; synthetic codec regression confirms JPEG2000 image loss. Retained only for reproducible failure/feasibility probes; not a production converter selection."
+    }
+  ]
+}

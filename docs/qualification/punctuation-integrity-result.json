@@ -1,0 +1,92 @@
+{
+  "status": "review_required",
+  "source_pages": 108,
+  "converted_pages": 108,
+  "page_sequence_matches": true,
+  "nonempty_source_pages": 108,
+  "script_elements": 3,
+  "pages_requiring_review": [
+    6,
+    7,
+    63,
+    65,
+    78,
+    85
+  ],
+  "private_use_characters": 0,
+  "missing_numeric_occurrences": 0,
+  "added_numeric_occurrences": 0,
+  "missing_characters": 16,
+  "added_characters": 16,
+  "raw_hyphen_changes": [
+    {
+      "page": 6,
+      "source": {
+        "U+002D": 5,
+        "U+2011": 2,
+        "U+2014": 2
+      },
+      "converted": {
+        "U+002D": 7,
+        "U+2014": 2
+      }
+    },
+    {
+      "page": 7,
+      "source": {
+        "U+002D": 9,
+        "U+2011": 5
+      },
+      "converted": {
+        "U+002D": 14
+      }
+    },
+    {
+      "page": 63,
+      "source": {
+        "U+002D": 2,
+        "U+2011": 1
+      },
+      "converted": {
+        "U+002D": 3
+      }
+    },
+    {
+      "page": 65,
+      "source": {
+        "U+002D": 13,
+        "U+2011": 2
+      },
+      "converted": {
+        "U+002D": 15
+      }
+    },
+    {
+      "page": 78,
+      "source": {
+        "U+002D": 64,
+        "U+2011": 4
+      },
+      "converted": {
+        "U+002D": 68
+      }
+    },
+    {
+      "page": 85,
+      "source": {
+        "U+002D": 15,
+        "U+2011": 2
+      },
+      "converted": {
+        "U+002D": 17
+      }
+    }
+  ],
+  "source_numeric_occurrences": 3467,
+  "converted_numeric_occurrences": 3467,
+  "source_sha256": "f8ada8df24f31c6dc1d251169e9586617d73b7fc21a83b60290e7f3b76f77b9b",
+  "html_sha256": "2497f06490dd389ca42c56c02ab710ee6e5b2b0f5a8831b38c9b742a01437a21",
+  "source_text_sha256": "e71e5a883d5d11fb934b46f2dd1ef0c069b369189b3c07bb94ab3b27384c5284",
+  "analysis_only": true,
+  "production_qualified": false
+}

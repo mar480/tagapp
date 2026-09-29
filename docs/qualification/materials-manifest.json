@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "files": [
+    {
+      "path": "materials/README.md",
+      "size_bytes": 620,
+      "sha256": "288564dd183c9edc2ff79bdd8568e4dc3646da3a5ce2b59f488d18deb07c2633",
+      "publication": "local_only",
+      "previous_revision": {
+        "size_bytes": 527,
+        "sha256": "c03340189088aad79ae456e5a156b93e9b748adde550fdebc8498edf66bfa1d1"
+      },
+      "change_note": "User added the illustrative-accounts directory to the inventory; original source documents are unchanged."
+    },
+    {
+      "path": "materials/inbox/companies house guidance/Companies_House_TIS for accounts.odt",
+      "size_bytes": 316948,
+      "sha256": "6c1e4d516b8dae50e1c34e9b453c5209f6958034cddb88f1ceb7e5ff331cd05d",
+      "publication": "local_only"
+    },
+    {
+      "path": "materials/inbox/companies house guidance/Companies_House_TIS for filing_v5.3.odt",
+      "size_bytes": 157357,
+      "sha256": "6155aacfdb2d80369abc8d12f82eb6ff5ad52c8667cd5079b279b6a4b5649e80",
+      "publication": "local_only"
+    },
+    {
+      "path": "materials/inbox/frc taxonomy guidance/FRC_Accounts_Taxonomies_Design_2026.pdf",
+      "size_bytes": 636548,
+      "sha256": "35daf715f8746e0cd99af5a110ff9b880d04edcb1e3258421dbc405f1ad8e912",
+      "publication": "local_only"
+    },
+    {
+      "path": "materials/inbox/frc taxonomy guidance/FRC_Taoxnomies_Developer_Guide_2026.pdf",
+      "size_bytes": 1034934,
+      "sha256": "4da4d2eb6ba1151397e08fde7b6e688db6752fdeb4a17fe47819d79dc1a2012f",
+      "publication": "local_only"
+    },
+    {
+      "path": "materials/inbox/frc taxonomy guidance/XBRL_Tagging_Guide_-_FRC_Taxonomies_2026.pdf",
+      "size_bytes": 1255151,
+      "sha256": "f51e136fe2b92664e8bbe168108d56c51e0920e0fc93bbf52bf0c6fc38aa3b34",
+      "publication": "local_only"
+    },
+    {
+      "path": "materials/repos/README.md",
+      "size_bytes": 1353,
+      "sha256": "1d8bb53e7cbbe4b448392042131953927f9ea1e3d20934e809379ff0f0542cc0",
+      "publication": "local_only"
+    },
+    {
+      "path": "materials/inbox/illustrative accounts/fy26-illustrative-accounts-magnificent-cuisine-limited.pdf",
+      "size_bytes": 29855944,
+      "sha256": "f8ada8df24f31c6dc1d251169e9586617d73b7fc21a83b60290e7f3b76f77b9b",
+      "publication": "local_only",
+      "classification": "Publisher illustrative accounts and guidance; user-selected local development reference, not normative filing authority"
+    }
+  ]
+}

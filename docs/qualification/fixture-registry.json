@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "principal_fixture": "gt-frs102-fy26",
+  "fixtures": [
+    {
+      "id": "gt-frs102-fy26",
+      "role": "principal_local_proof_of_concept",
+      "source_path": "materials/inbox/illustrative accounts/fy26-illustrative-accounts-magnificent-cuisine-limited.pdf",
+      "sha256": "f8ada8df24f31c6dc1d251169e9586617d73b7fc21a83b60290e7f3b76f77b9b",
+      "size_bytes": 29855944,
+      "pages": 108,
+      "publisher": "Grant Thornton",
+      "publisher_page": "https://www.grantthornton.co.uk/insights/annual-financial-reporting-illustrative-accounts/",
+      "reporting_year_end": "2026-12-31",
+      "framework": "FRS102",
+      "publication": "local_only",
+      "qualification": "development_reference_not_validated_filing",
+      "policy": "User selected for local proof of concept. Preserve original pages and publisher guidance; do not assume all content is company disclosure. PDF, extracted text, converted assets and detailed diagnostics remain local. Create representative synthetic accounts for public distribution later."
+    },
+    {
+      "id": "synthetic-frs102-v1",
+      "role": "focused_arithmetic_and_conversion_regression",
+      "source_path": "tests/fixtures/synthetic-frs102/report.json",
+      "publication": "public_synthetic",
+      "qualification": "not_representative_principal_fixture"
+    }
+  ]
+}

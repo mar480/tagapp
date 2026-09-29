@@ -1,0 +1,1257 @@
+{
+  "schema_version": 1,
+  "source": "ch-accounts",
+  "as_of": "2026-09-28",
+  "purpose": "Qualification backlog, not executable eligibility or filing rules",
+  "frameworks": [
+    {
+      "id": "FRS101",
+      "entry_point": "https://xbrl.frc.org.uk/FRS-101/2026-01-01/FRS-101-2026-01-01.xsd",
+      "source_paragraphs": [
+        758,
+        759
+      ]
+    },
+    {
+      "id": "FRS102",
+      "entry_point": "https://xbrl.frc.org.uk/FRS-102/2026-01-01/FRS-102-2026-01-01.xsd",
+      "source_paragraphs": [
+        760,
+        761
+      ]
+    },
+    {
+      "id": "FRS105",
+      "entry_point": "https://xbrl.frc.org.uk/FRS-102/2026-01-01/FRS-102-2026-01-01.xsd",
+      "source_paragraphs": [
+        794,
+        802
+      ]
+    },
+    {
+      "id": "UK_IFRS",
+      "entry_point": "https://xbrl.frc.org.uk/IFRS/2026-01-01/IFRS-2026-01-01.xsd",
+      "source_paragraphs": [
+        762,
+        763
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "company-audited-abridged",
+      "entity": "company",
+      "category": "audited-abridged",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            870,
+            893
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-audited-abridged-positive",
+        "requirements": "Abridged classification; period beginning on/after 2015-01-01; entity-specific small-regime and abridgement statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-audited-abridged-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-audited-abridged-category-negative",
+          "mutation": "Period before permitted abridgement boundary; omit required abridgement statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-audited-small",
+      "entity": "company",
+      "category": "audited-small",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            894,
+            909
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-audited-small-positive",
+        "requirements": "Small-regime classification and statement; applicable auditor disclosures.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-audited-small-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-audited-small-category-negative",
+          "mutation": "Omit required small-regime statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-audited-medium",
+      "entity": "company",
+      "category": "audited-medium",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            910,
+            924
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-audited-medium-positive",
+        "requirements": "Medium-regime classification and statement; applicable auditor disclosures.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-audited-medium-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-audited-medium-category-negative",
+          "mutation": "Omit required medium-regime statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-audited-group",
+      "entity": "company",
+      "category": "audited-group",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            925,
+            952
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-audited-group-positive",
+        "requirements": "Group scope; parent and consolidated contexts; correct GroupCompanyDataDimension/default handling; entity-specific section requirements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-audited-group-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-audited-group-category-negative",
+          "mutation": "Omit required consolidated balance sheet or use inconsistent balance-sheet dates.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-audited-micro",
+      "entity": "company",
+      "category": "audited-micro",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            953,
+            966
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS105"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-audited-micro-positive",
+        "requirements": "Micro-entity accounting standard and statement; additional small-regime wording when traded and P&L omitted. Auditor report is not unconditionally mandatory in this section.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-audited-micro-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-audited-micro-category-negative",
+          "mutation": "Omit micro statement or conditional small-regime wording.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-audited-full",
+      "entity": "company",
+      "category": "audited-full",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            967,
+            1020
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-audited-full-positive",
+        "requirements": "Applicable audit report and P&L; company directors report requirement differs from LLP.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-audited-full-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-audited-full-category-negative",
+          "mutation": "Omit applicable required section; separately check company/LLP exceptions.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-unaudited-dormant",
+      "entity": "company",
+      "category": "unaudited-dormant",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1555,
+            1571
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-unaudited-dormant-positive",
+        "requirements": "Dormant classification; entity-specific dormant exemption and responsibility statements; company and LLP exceptions kept distinct.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-unaudited-dormant-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-unaudited-dormant-category-negative",
+          "mutation": "Omit required dormant exemption statement or contradict dormant status.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-unaudited-micro",
+      "entity": "company",
+      "category": "unaudited-micro",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1572,
+            1590
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS105"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-unaudited-micro-positive",
+        "requirements": "Micro accounting standard; entity-specific exemption, responsibility and micro statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-unaudited-micro-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-unaudited-micro-category-negative",
+          "mutation": "Omit micro statement or required exemption statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-unaudited-abridged",
+      "entity": "company",
+      "category": "unaudited-abridged",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1591,
+            1608
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-unaudited-abridged-positive",
+        "requirements": "Abridged classification; period beginning on/after 2015-01-01; entity-specific exemption and abridgement statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-unaudited-abridged-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-unaudited-abridged-category-negative",
+          "mutation": "Omit abridgement statement or use ineligible historical period.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-unaudited-group",
+      "entity": "company",
+      "category": "unaudited-group",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1626,
+            1642
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-unaudited-group-positive",
+        "requirements": "Group classification; entity-specific small-regime, exemption and responsibility statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-unaudited-group-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-unaudited-group-category-negative",
+          "mutation": "Omit required small-regime statement or contradictory group classification.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "company-unaudited-full-small-format",
+      "entity": "company",
+      "category": "unaudited-full-small-format",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1643,
+            1656
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "company-unaudited-full-small-format-positive",
+        "requirements": "Full small-company-format classification; entity-specific exemption, small-regime and responsibility statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "company-unaudited-full-small-format-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "company-unaudited-full-small-format-category-negative",
+          "mutation": "Omit required responsibility or exemption statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-audited-abridged",
+      "entity": "llp",
+      "category": "audited-abridged",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            870,
+            893
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-audited-abridged-positive",
+        "requirements": "Abridged classification; period beginning on/after 2015-01-01; entity-specific small-regime and abridgement statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-audited-abridged-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-audited-abridged-category-negative",
+          "mutation": "Period before permitted abridgement boundary; omit required abridgement statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-audited-small",
+      "entity": "llp",
+      "category": "audited-small",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            894,
+            909
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-audited-small-positive",
+        "requirements": "Small-regime classification and statement; applicable auditor disclosures.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-audited-small-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-audited-small-category-negative",
+          "mutation": "Omit required small-regime statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-audited-medium",
+      "entity": "llp",
+      "category": "audited-medium",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            910,
+            924
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-audited-medium-positive",
+        "requirements": "Medium-regime classification and statement; applicable auditor disclosures.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-audited-medium-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-audited-medium-category-negative",
+          "mutation": "Omit required medium-regime statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-audited-group",
+      "entity": "llp",
+      "category": "audited-group",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            925,
+            952
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-audited-group-positive",
+        "requirements": "Group scope; parent and consolidated contexts; correct GroupCompanyDataDimension/default handling; entity-specific section requirements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-audited-group-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-audited-group-category-negative",
+          "mutation": "Omit required consolidated balance sheet or use inconsistent balance-sheet dates.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-audited-micro",
+      "entity": "llp",
+      "category": "audited-micro",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            953,
+            966
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS105"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-audited-micro-positive",
+        "requirements": "Micro-entity accounting standard and statement; additional small-regime wording when traded and P&L omitted. Auditor report is not unconditionally mandatory in this section.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-audited-micro-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-audited-micro-category-negative",
+          "mutation": "Omit micro statement or conditional small-regime wording.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-audited-full",
+      "entity": "llp",
+      "category": "audited-full",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            967,
+            1020
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-audited-full-positive",
+        "requirements": "Applicable audit report and P&L; company directors report requirement differs from LLP.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-audited-full-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-audited-full-category-negative",
+          "mutation": "Omit applicable required section; separately check company/LLP exceptions.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-unaudited-dormant",
+      "entity": "llp",
+      "category": "unaudited-dormant",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1555,
+            1571
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-unaudited-dormant-positive",
+        "requirements": "Dormant classification; entity-specific dormant exemption and responsibility statements; company and LLP exceptions kept distinct.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-unaudited-dormant-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-unaudited-dormant-category-negative",
+          "mutation": "Omit required dormant exemption statement or contradict dormant status.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-unaudited-micro",
+      "entity": "llp",
+      "category": "unaudited-micro",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1572,
+            1590
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS105"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-unaudited-micro-positive",
+        "requirements": "Micro accounting standard; entity-specific exemption, responsibility and micro statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-unaudited-micro-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-unaudited-micro-category-negative",
+          "mutation": "Omit micro statement or required exemption statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-unaudited-abridged",
+      "entity": "llp",
+      "category": "unaudited-abridged",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1591,
+            1608
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-unaudited-abridged-positive",
+        "requirements": "Abridged classification; period beginning on/after 2015-01-01; entity-specific exemption and abridgement statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-unaudited-abridged-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-unaudited-abridged-category-negative",
+          "mutation": "Omit abridgement statement or use ineligible historical period.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-unaudited-group",
+      "entity": "llp",
+      "category": "unaudited-group",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1626,
+            1642
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-unaudited-group-positive",
+        "requirements": "Group classification; entity-specific small-regime, exemption and responsibility statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-unaudited-group-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-unaudited-group-category-negative",
+          "mutation": "Omit required small-regime statement or contradictory group classification.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    },
+    {
+      "id": "llp-unaudited-full-small-format",
+      "entity": "llp",
+      "category": "unaudited-full-small-format",
+      "route": "Companies House XML accounts; exact payload profile to qualify",
+      "source_refs": [
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            826,
+            865
+          ]
+        },
+        {
+          "source": "ch-accounts",
+          "paragraphs": [
+            1643,
+            1656
+          ]
+        }
+      ],
+      "frameworks_to_assess": [
+        "FRS101",
+        "FRS102",
+        "UK_IFRS"
+      ],
+      "eligibility": "unresolved; technical category is not proof of statutory eligibility",
+      "status": "candidate",
+      "production_enabled": false,
+      "positive_case": {
+        "id": "llp-unaudited-full-small-format-positive",
+        "requirements": "Full small-company-format classification; entity-specific exemption, small-regime and responsibility statements.",
+        "status": "specified_not_executed",
+        "fixture_sha256": null,
+        "evidence": null
+      },
+      "negative_cases": [
+        {
+          "id": "llp-unaudited-full-small-format-missing-approval-date",
+          "mutation": "Remove the mandatory DateAuthorisationFinancialStatementsForIssue fact.",
+          "expected": "blocking filing-profile finding once applicable profile is qualified",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        },
+        {
+          "id": "llp-unaudited-full-small-format-category-negative",
+          "mutation": "Omit required responsibility or exemption statement.",
+          "expected": "blocking finding under applicable period/entity rules; exceptions must be tested",
+          "status": "specified_not_executed",
+          "fixture_sha256": null,
+          "evidence": null
+        }
+      ]
+    }
+  ],
+  "deferred": [
+    "UKSEF",
+    "Welsh package journeys",
+    "subsidiary exemption packages",
+    "charities and other specialist regimes"
+  ],
+  "historical_or_unresolved": [
+    "Abbreviated accounts with periods beginning before 2016-01-01",
+    "Initial and interim accounts: separate scope/eligibility review",
+    "Revised accounts: original/revised dimension semantics differ by taxonomy version",
+    "Auditor identity concepts changed in 2026",
+    "Statutory entity eligibility, exclusions, thresholds and effective dates per framework/category"
+  ]
+}

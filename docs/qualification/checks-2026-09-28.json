@@ -1,0 +1,39 @@
+{
+  "observed_on": "2026-09-28",
+  "unit_tests": {
+    "command": "python3 -m unittest discover -s tests/baseline -v",
+    "count": 30,
+    "status": "pass"
+  },
+  "local_materials": {
+    "command": "python3 -m tools.baseline.check --local-materials",
+    "status": "pass"
+  },
+  "publication_worktree": {
+    "command": "python3 -m tools.baseline.publication_guard --worktree",
+    "status": "pass"
+  },
+  "public_only_checkout": "Temporary isolated index and public baseline consistency check passed; original index untouched",
+  "hosted_ci": "not run; nothing pushed",
+  "qualification_gate": "incomplete as expected; no filing profile enabled",
+  "source_checksums": {
+    "tools/__init__.py": "3a63c7d9acb9291df9e4537b2889bb97e733a70d0a9a272ca99ac02993a4c26d",
+    "tools/baseline/__init__.py": "05faffeaf1eb090cf8a62c38129e6f48361e4fb5b1a06e39e919b5ba763bcc4b",
+    "tools/baseline/acquire.py": "c06a8a0b028108d00807d7c8a00889e56b9bff42aa1a154bb3f909241ae5ef8e",
+    "tools/baseline/check.py": "e3eac4166f3639d9f54dfd39012b948f410705b114254be5fe952ab5f365e30b",
+    "tools/baseline/conversion_probe.py": "e320955ddb689bcc7af2b86c131279ebf0e161d51c0a18cee78f1dfbfe3ef2f0",
+    "tools/baseline/processor_probe.py": "f0dd05b66cc5f50e37ec56207b537fd763a55b8ad9d92517ddf9c4b0d2dcd85f",
+    "tools/baseline/publication_guard.py": "8f77bc7dcb839acb0472724f21acb2e125454b256d5e676078f3121f8c512809",
+    "tools/baseline/report_conversion_probe.py": "ac53557380cd10b177e2a6cfe0e49db7cc4832d2b72b20317245a8f26faca5db",
+    "tools/baseline/report_fixture.py": "2295a70c8bbadf536ee6280e865a418a1631079279a866eb0a3b9b68f38ced33",
+    "tools/baseline/taxonomy_probe.py": "25151416b70431564ff30d3eaab8c2119cd4098336cf216ebf7ba813953d36d1",
+    "tests/baseline/test_acquire.py": "b7e8c2eb11d247bc5ea7514e9541af276b5e16baa027d5bf4309f29f0502f350",
+    "tests/baseline/test_baseline_records.py": "da226c4246f74c98b68c950a92de4c359483479485e62eeb176a8e9cfa3c427a",
+    "tests/baseline/test_conversion_probe.py": "e8c571e3ca8f75ea8994e24f98c0043ee3b2820cfe850f37edb11ee69fa04cf2",
+    "tests/baseline/test_publication_guard.py": "fb5b11632c4bf79def3659cae79f80bf5c784c1092548722269d75c594f7f41c",
+    "tests/baseline/test_report_fixture.py": "c60cad71c5f624f6bcff628f16c00c85c7cc5452fff9145466418677b89d406d",
+    "tests/baseline/test_taxonomy_probe.py": "92f6c7df81c960475bee20bd973d6b02360e278ae0b8050d77aab5ab55f80b18",
+    "tests/fixtures/synthetic-frs102/README.md": "186bce35505491d254f4560b5a61f378888aabdea52851c7f33bc44670f738dd",
+    "tests/fixtures/synthetic-frs102/report.json": "2709640c54a924bd7a3c1f7802eb5db599ceb7db9db65ef92063254f6adcac00"
+  }
+}

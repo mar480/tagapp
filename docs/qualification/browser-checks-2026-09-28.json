@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-28",
+  "scope": "Browser/codec qualification and early incompatible-input rejection",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests/baseline -q",
+      "exit_code": 0,
+      "tests": 49
+    },
+    {
+      "command": "python3 -m tools.baseline.check --local-materials",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard --worktree",
+      "exit_code": 0
+    },
+    {
+      "command": "node --check tools/baseline/browser_probe.cjs",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.browser_probe",
+      "exit_code": 1,
+      "status": "review_required",
+      "synthetic_samples": 8,
+      "synthetic_matches": 8,
+      "report_samples": 238,
+      "report_matches": 210
+    },
+    {
+      "command": "python3 -m tools.baseline.visual_probe",
+      "exit_code": 0,
+      "status": "visual_review_pending",
+      "measured_pages": 18,
+      "final_browser_screenshot_hashes_match": true
+    },
+    {
+      "command": "python3 -m tools.baseline.codec_probe",
+      "exit_code": 1,
+      "status": "JPEG2000 image missing; identical Flate control present"
+    },
+    {
+      "command": "python3 -m tools.baseline.pdf_preflight",
+      "exit_code": 1,
+      "status": "converter_incompatible",
+      "affected_image_streams": 20
+    }
+  ],
+  "source_hashes": {
+    "tools/baseline/browser_probe.py": "363fb2ff02b6be6cc694ffcc0df20ad0db9b09be90c717cefd1e7735c2f19687",
+    "tools/baseline/browser_probe.cjs": "716430c7b5e60186294aa0a69e48816c6d98445340a00c93826d0150a4db5fcc",
+    "tools/baseline/visual_probe.py": "87d80647a55ad0bd6cbe30fce901528a79944725926ef52f2296d95ec1f46801",
+    "tools/baseline/codec_probe.py": "d09112cbe09ef59bab7084463e51a940fd740290f88594de4f05355199e3bc5c",
+    "tools/baseline/pdf_preflight.py": "417a682262648c00a67be7280086a0db57e3f9ba4779405bf69622bd0b0ba7f8",
+    "tools/baseline/illustrative_probe.py": "6fe3d4c55d63171ede8e3661e1e7765a159a0ec30dccd4f90ccd98ddcade6775"
+  },
+  "milestone_complete": false,
+  "remaining_action": "Build and pin a converter with OpenJPEG; require the tiny codec control to pass before converting the substantial report again."
+}

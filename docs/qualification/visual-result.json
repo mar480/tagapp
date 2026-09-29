@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "status": "visual_review_pending",
+  "production_qualified": false,
+  "source_pdf_sha256": "f8ada8df24f31c6dc1d251169e9586617d73b7fc21a83b60290e7f3b76f77b9b",
+  "html_sha256": "916baccc5f38f44dcab74aa991c1742ddba7e92d973a573b4a0ef65edf2aa905",
+  "pillow_version": "12.1.1",
+  "pdf_rasterizer_sha256": "ad3659e9229f0609640db64611023130222f892a00706ea318af04a07326014a",
+  "dpi": 72,
+  "pages": [
+    {
+      "page": 1,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 62.4174,
+      "pixels_differing_over_32_fraction": 0.494907,
+      "unmatched_pdf_ink_fraction": 0.958643,
+      "unmatched_html_ink_fraction": 0.000698,
+      "pdf_png_sha256": "dc452fe0c519b445d17425b55f4ffbe71553fdcde9a78ba0f2a2930f1ee5784e",
+      "html_png_sha256": "c76496594b43bfffdf382bf175a635c6e693c1e699f7f8e28f297e09d2150c09"
+    },
+    {
+      "page": 6,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 13.6446,
+      "pixels_differing_over_32_fraction": 0.148522,
+      "unmatched_pdf_ink_fraction": 0.003561,
+      "unmatched_html_ink_fraction": 0.019925,
+      "pdf_png_sha256": "42f02080a3d1f5ee332cb452f2dc5627d01ec8ac7dbe7069d503f84deecbf01d",
+      "html_png_sha256": "71fb180952b15aa52a8d3b4063da975715ed16df4e7490e5ed3ee8df726b2291"
+    },
+    {
+      "page": 7,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 16.1599,
+      "pixels_differing_over_32_fraction": 0.174405,
+      "unmatched_pdf_ink_fraction": 0.001929,
+      "unmatched_html_ink_fraction": 0.017125,
+      "pdf_png_sha256": "cb49f6f5cf37e3288a8ad251cf847df46a7fb5ccd656f3db0f878e08e0803237",
+      "html_png_sha256": "654fced4c40711c9e62197dcd559bc980a2592cbdbd3d30c92564e24b1319824"
+    },
+    {
+      "page": 21,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 7.9348,
+      "pixels_differing_over_32_fraction": 0.085943,
+      "unmatched_pdf_ink_fraction": 0.075038,
+      "unmatched_html_ink_fraction": 0.028448,
+      "pdf_png_sha256": "13c582269f888ba8710feb0ade92f1adf6a872960f28e4189bc58c6f5adbc123",
+      "html_png_sha256": "251795bfe6c208f2d5c3c19834a14869f8eb27870552a54b6c289de8c96cdb61"
+    },
+    {
+      "page": 32,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 8.4256,
+      "pixels_differing_over_32_fraction": 0.079712,
+      "unmatched_pdf_ink_fraction": 0.042903,
+      "unmatched_html_ink_fraction": 0.012307,
+      "pdf_png_sha256": "82c24054a7f844ae7660a29d68db01b9f37c8306c29b737375562a0d1c90bdde",
+      "html_png_sha256": "1672983448acfbef56ab6207d57506b5a1549c80e110abb9e005ef5212f4e822"
+    },
+    {
+      "page": 33,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 70.5448,
+      "pixels_differing_over_32_fraction": 0.521523,
+      "unmatched_pdf_ink_fraction": 0.967658,
+      "unmatched_html_ink_fraction": 0.015346,
+      "pdf_png_sha256": "28554dd911d15f2965f3e59fd42394a58a931b719b7cce9ceaf16fb5ef25a947",
+      "html_png_sha256": "bccbdf67c0c4e7914cf2f93ec4d869e0bf05d113e889bdb7ee1f717ac9431b51"
+    },
+    {
+      "page": 34,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 9.0056,
+      "pixels_differing_over_32_fraction": 0.076247,
+      "unmatched_pdf_ink_fraction": 0.062831,
+      "unmatched_html_ink_fraction": 0.011338,
+      "pdf_png_sha256": "c3141f1a3f2c7925b63d81042a84fb20f218354c31e11891e1c8dd61eb0a1471",
+      "html_png_sha256": "f855944d2edf526d939038823e34e348367b46134cbda50386ec91684d1a1f31"
+    },
+    {
+      "page": 35,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 5.4442,
+      "pixels_differing_over_32_fraction": 0.063667,
+      "unmatched_pdf_ink_fraction": 0.011527,
+      "unmatched_html_ink_fraction": 0.040326,
+      "pdf_png_sha256": "b59a43254a5d5c01c212be59b236a2b83e1dd222c197c94b0ae5626c659fba39",
+      "html_png_sha256": "7a1f34649a6e04f88e93edb14a9e6dc46eae54b229487938cc81ff7b75e6dcb9"
+    },
+    {
+      "page": 36,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 8.3999,
+      "pixels_differing_over_32_fraction": 0.075725,
+      "unmatched_pdf_ink_fraction": 0.081287,
+      "unmatched_html_ink_fraction": 0.013722,
+      "pdf_png_sha256": "01a5e33e454eedd655e9480fd250a32db2bd78d03cd03c1fbcb64b66fb41e7a6",
+      "html_png_sha256": "70f936146617480486ce718b42ef8a4756ac80925fde69c068b66e9373da0edf"
+    },
+    {
+      "page": 37,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 59.3493,
+      "pixels_differing_over_32_fraction": 0.570938,
+      "unmatched_pdf_ink_fraction": 0.966063,
+      "unmatched_html_ink_fraction": 0.012504,
+      "pdf_png_sha256": "6c571f266853a87ad42c1893017d6caeee91b8999eef67db39b61aa135a229b4",
+      "html_png_sha256": "ee1814724d4d3a6a810481d728ce66c33d91e7dcb7f39a2940ea05fe14e966ed"
+    },
+    {
+      "page": 38,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 8.3518,
+      "pixels_differing_over_32_fraction": 0.075677,
+      "unmatched_pdf_ink_fraction": 0.059564,
+      "unmatched_html_ink_fraction": 0.015917,
+      "pdf_png_sha256": "394a9542fc7fdbed367630fd620eff68c0131dd0a0f27aa6a5c14d041665bffc",
+      "html_png_sha256": "39d3fff1288473f795a31a2b8a9869dc49dde4534c918fc8bc17aa300c1405d9"
+    },
+    {
+      "page": 43,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 9.1203,
+      "pixels_differing_over_32_fraction": 0.094589,
+      "unmatched_pdf_ink_fraction": 0.048675,
+      "unmatched_html_ink_fraction": 0.016634,
+      "pdf_png_sha256": "dd2f38daa2fe16df29b65463c803f3af89e58ecaf61de22f501858e7db8a3369",
+      "html_png_sha256": "5a9f0774c5bab6751a65be209eaba72ab59bba0bdef4bd8d8e780ed6d469a0ed"
+    },
+    {
+      "page": 63,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 13.6792,
+      "pixels_differing_over_32_fraction": 0.150696,
+      "unmatched_pdf_ink_fraction": 0.003689,
+      "unmatched_html_ink_fraction": 0.021437,
+      "pdf_png_sha256": "8c191ef8bce26acd2df773a03b98ae6c3db8324abc15e058c6a3f98e275379fd",
+      "html_png_sha256": "da21c2fe7aa873a36f98e9fbfea64aa211c989f906421b40e9ae9de515bd46ac"
+    },
+    {
+      "page": 65,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 13.0382,
+      "pixels_differing_over_32_fraction": 0.140938,
+      "unmatched_pdf_ink_fraction": 0.014138,
+      "unmatched_html_ink_fraction": 0.029423,
+      "pdf_png_sha256": "fb2b6a9d1c4c5da3c3309edd64a4ccf5de996bf4047b70207750b285bcb958e7",
+      "html_png_sha256": "fa87de7c53850f223c8ae11d48ba86ed098e3bd980ae74fed5aab2228f3e0c47"
+    },
+    {
+      "page": 78,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 11.9012,
+      "pixels_differing_over_32_fraction": 0.116136,
+      "unmatched_pdf_ink_fraction": 0.085124,
+      "unmatched_html_ink_fraction": 0.020484,
+      "pdf_png_sha256": "64123ed0a0be4ee8fb2ec9aad1cb676a84011bebeb3e2f3b3bfd0dab09690a5b",
+      "html_png_sha256": "071646b203f2d46e4816f6013e0dae8b2549ccdc15a9591d240dac73668b39c3"
+    },
+    {
+      "page": 82,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 8.1062,
+      "pixels_differing_over_32_fraction": 0.089229,
+      "unmatched_pdf_ink_fraction": 0.051881,
+      "unmatched_html_ink_fraction": 0.015916,
+      "pdf_png_sha256": "9ec98247c27d255c9f234849c54cc48b65ac3ec593ad6d7294f6b1088b4029b6",
+      "html_png_sha256": "1ede2cc8e6a0f7252d5e131a38723389750c22be26e870e32913c34fc3d26b05"
+    },
+    {
+      "page": 85,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 4.5312,
+      "pixels_differing_over_32_fraction": 0.048502,
+      "unmatched_pdf_ink_fraction": 0.021991,
+      "unmatched_html_ink_fraction": 0.025038,
+      "pdf_png_sha256": "9922a400ac4a2a331cca5482ea066b04443691bfb20ff38f6cf6a79e47a8d16e",
+      "html_png_sha256": "808b0e4b197a5718f92d85b74baacca42811e4c82ddb421b1983df2e39e3b305"
+    },
+    {
+      "page": 108,
+      "status": "measured_review_pending",
+      "pdf_size": [
+        596,
+        842
+      ],
+      "html_size": [
+        596,
+        842
+      ],
+      "mean_absolute_channel_error": 1.549,
+      "pixels_differing_over_32_fraction": 0.020274,
+      "unmatched_pdf_ink_fraction": 0.161218,
+      "unmatched_html_ink_fraction": 0.069906,
+      "pdf_png_sha256": "ffb7e6453ce60b6c73bdc08886910dba00b9346ddc1b44fab19c5a20380f29fc",
+      "html_png_sha256": "0f8ecf837fd1975c8a101262b27f4b7f944ad8ff22638026358476ceb4e03875"
+    }
+  ]
+}

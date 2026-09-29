@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "fixture": "synthetic-frs102-v1",
+  "source_pdf_sha256": "37939d338c52ed62494a49554683c92d0332168d38062520a7b9116d5a2e9285",
+  "converter_sha256": "11de2583a3abce5f141fd7fafb1fea2c67b15886e546d6b7675c600012e6ab8c",
+  "expected_pages": 16,
+  "expected_monetary_occurrences": 86,
+  "production_qualified": false,
+  "status": "pass",
+  "observed_pages": 16,
+  "copied_monetary_occurrences": 86,
+  "missing": {},
+  "unexpected": {},
+  "source_amounts_match": true,
+  "script_elements": 3,
+  "converted_html_sha256": "15cabcc1d7551e374f50894f2e1922c15d9fb1caa70e25db35183c2d0ed395e4",
+  "observed_on": "2026-09-28"
+}

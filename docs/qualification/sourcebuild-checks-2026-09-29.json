@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-29",
+  "scope": "Replacement converter build, codec and full-report qualification; public checks",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests/baseline -q",
+      "exit_code": 0,
+      "tests": 52
+    },
+    {
+      "command": "python3 -m tools.baseline.check --local-materials",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard --worktree",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.codec_probe --runtime sourcebuild",
+      "exit_code": 0,
+      "cases_passed": 2
+    },
+    {
+      "command": "python3 -m tools.baseline.sourcebuild_probe --full",
+      "exit_code": 1,
+      "status": "review_required",
+      "pages": 108,
+      "numeric_occurrences": 3467,
+      "missing_numeric_occurrences": 0,
+      "added_numeric_occurrences": 0,
+      "hyphen_substitutions": 16
+    },
+    {
+      "command": "python3 -m tools.baseline.browser_probe --candidate sourcebuild",
+      "exit_code": 1,
+      "status": "review_required",
+      "report_samples": 238,
+      "report_matches": 210,
+      "synthetic_samples": 8,
+      "synthetic_matches": 8
+    },
+    {
+      "command": "python3 -m tools.baseline.visual_probe --candidate sourcebuild",
+      "exit_code": 0,
+      "status": "visual_review_pending",
+      "measured_pages": 18,
+      "reused_reference_pages": 18
+    }
+  ],
+  "source_hashes": {
+    "tools/baseline/converter_build.py": "b87cf7541d2e80dd5b218327ab2db6dcf25e7f3d93711e0e01fc4c16982b6ab1",
+    "tools/baseline/converter_compile.sh": "ed47cc2b66e7a1d5884e48d690461465803069c2cfeef9a0daaffbe5783a6b80",
+    "tools/baseline/converter_pin.py": "f0776c1eddcea39c16244a5eb56f991834dd69924847eb2a4fac094ef515c091",
+    "tools/baseline/built_converter.py": "e939d37729c801643b141cfa7fdaaad2663d9c4744f336c550f9469304604c4b",
+    "tools/baseline/sourcebuild_probe.py": "c79b31190f94d7519263ada06351a5c162e9b5d802d2b0a16ebe9214d2faadbf",
+    "tools/baseline/codec_probe.py": "b6a16f9d661d6b676611641b2bddd82be297923099b4e68ff2c2852db74da665",
+    "tools/baseline/browser_probe.py": "c21848a3c93b736f16d9337a808644c66d0e122dbdc3a933914f5bc73311281d",
+    "tools/baseline/browser_probe.cjs": "716430c7b5e60186294aa0a69e48816c6d98445340a00c93826d0150a4db5fcc",
+    "tools/baseline/visual_probe.py": "659f2e53fe3a8a487c20babc6d903eeed01e2383e40c333d512e4aa63bff16d7"
+  },
+  "milestone_complete": false,
+  "remaining_action": "Isolate native selection mismatches using existing HTML; resolve punctuation and finish visual/corpus/distribution review."
+}

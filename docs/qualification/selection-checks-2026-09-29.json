@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-29",
+  "scope": "Selection boundary diagnosis and independent public geometry regression",
+  "checks": [
+    {
+      "command": "python3 -m tools.baseline.browser_probe --candidate sourcebuild --diagnose-selection",
+      "exit_code": 1,
+      "status": "review_required",
+      "edge_matches": 210,
+      "inset_matches": 238,
+      "samples": 238,
+      "evidence": "selection-result.json"
+    },
+    {
+      "command": "python3 -m tools.baseline.browser_probe --synthetic-only",
+      "exit_code": 0,
+      "ordinary_inset_matches": 8,
+      "ordinary_samples": 8,
+      "geometry_inset_matches": 8,
+      "geometry_samples": 8,
+      "evidence": "selection-control-result.json"
+    },
+    {
+      "command": "python3 -m unittest discover -s tests/baseline -q",
+      "exit_code": 0,
+      "tests": 52
+    },
+    {
+      "command": "python3 -m tools.baseline.check --local-materials",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard --worktree",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard",
+      "exit_code": 0
+    },
+    {
+      "command": "node --check tools/baseline/browser_probe.cjs",
+      "exit_code": 0
+    }
+  ],
+  "source_hashes": {
+    "tools/baseline/browser_probe.py": "92d80a5240bc4e147eb9e4f8b2ef1fc62c2d7f6e25d4bda059adea2568a80e48",
+    "tools/baseline/browser_probe.cjs": "d7d1d3e1b374182f310f8b77ca8a4e85e8baea65b3c4c12550867162b190bff3"
+  },
+  "production_qualified": false,
+  "milestone_complete": false,
+  "remaining_action": "Punctuation and visual/corpus qualification; explicit selection preview, anchors and accessible interaction belong to the application milestones.",
+  "punctuation_option_experiment": {
+    "source_sha256": "f8ada8df24f31c6dc1d251169e9586617d73b7fc21a83b60290e7f3b76f77b9b",
+    "converter_sha256": "7a77a599dd96511e76352ad672b774d076fbefd7cc21b19fa88b8854b7b4afa8",
+    "converter_options": [
+      "--tounicode",
+      "1",
+      "--decompose-ligature",
+      "1",
+      "--first-page",
+      "6",
+      "--last-page",
+      "6"
+    ],
+    "page": 6,
+    "converter_exit": 0,
+    "reference_exit": 0,
+    "wall_seconds": 0.343,
+    "production_qualified": false,
+    "status": "review_required",
+    "source_pages": 1,
+    "converted_pages": 1,
+    "page_sequence_matches": true,
+    "nonempty_source_pages": 1,
+    "script_elements": 3,
+    "pages_requiring_review": [
+      1
+    ],
+    "private_use_characters": 0,
+    "missing_numeric_occurrences": 0,
+    "added_numeric_occurrences": 0,
+    "missing_characters": 2,
+    "added_characters": 2,
+    "source_numeric_occurrences": 42,
+    "converted_numeric_occurrences": 42,
+    "html_sha256": "1db484ad955d55015e4c7a627c18052e8c92380bd794db37338dff9c6d22a5c7",
+    "page_number_note": "Text comparison temporarily maps single source page 6 to comparison index 1; report bytes are unchanged."
+  },
+  "reference_extractor_comparison": {
+    "status": "review_required",
+    "source_pages": 108,
+    "converted_pages": 108,
+    "page_sequence_matches": true,
+    "nonempty_source_pages": 108,
+    "script_elements": 3,
+    "pages_requiring_review": [
+      6,
+      7,
+      63,
+      65,
+      78,
+      85
+    ],
+    "private_use_characters": 0,
+    "missing_numeric_occurrences": 0,
+    "added_numeric_occurrences": 0,
+    "missing_characters": 16,
+    "added_characters": 16,
+    "source_numeric_occurrences": 3467,
+    "converted_numeric_occurrences": 3467,
+    "reference_text_sha256": "e71e5a883d5d11fb934b46f2dd1ef0c069b369189b3c07bb94ab3b27384c5284"
+  }
+}

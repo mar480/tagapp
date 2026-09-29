@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "package": {
+    "sha256": "ae80ae12d9d747ac531150b0051bcd67e7c9acf44313da19105b4cc013566462",
+    "size_bytes": 7467044,
+    "entries": 144,
+    "uncompressed_bytes": 49489344,
+    "identifier": "https://xbrl.frc.org.uk/fr/2026-01-01/v1-0-0",
+    "version": "1.0.0",
+    "entry_points": [
+      {
+        "name": "FRS-101",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/FRS-101/2026-01-01/FRS-101-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/FRS-101/2026-01-01/FRS-101-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "FRS-102",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/FRS-102/2026-01-01/FRS-102-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/FRS-102/2026-01-01/FRS-102-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "IFRS",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/IFRS/2026-01-01/IFRS-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/IFRS/2026-01-01/IFRS-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "Core Full",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/fr/2026-01-01/core/frc-core-full-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/fr/2026-01-01/core/frc-core-full-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "Core",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/fr/2026-01-01/core/frc-core-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/fr/2026-01-01/core/frc-core-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "FRS-102-UKSEF",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/FRS-102/2026-01-01/UKSEF/FRS-102-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/FRS-102/2026-01-01/UKSEF/FRS-102-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "IFRS-UKSEF",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/IFRS/2026-01-01/UKSEF/IFRS-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/IFRS/2026-01-01/UKSEF/IFRS-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "DPL",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/dpl/2026-01-01/dpl-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/dpl/2026-01-01/dpl-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "CIC-34",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/cic/2026-01-01/cic34/cic34-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/cic/2026-01-01/cic34/cic34-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "DSEP-AA06",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/dsep/2026-01-01/AA06/AA06-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/dsep/2026-01-01/AA06/AA06-2026-01-01.xsd"
+          }
+        ]
+      },
+      {
+        "name": "DSEP-Agreement",
+        "documents": [
+          {
+            "uri": "https://xbrl.frc.org.uk/dsep/2026-01-01/agreement/agreement-2026-01-01.xsd",
+            "archive_path": "FRC-2026-Taxonomy-v1.0.0/dsep/2026-01-01/agreement/agreement-2026-01-01.xsd"
+          }
+        ]
+      }
+    ],
+    "catalog_mappings": 10
+  },
+  "processor": "arelle-release",
+  "processor_version": "2.44.1",
+  "scope": "offline taxonomy load/validation; not filing-profile qualification",
+  "network": "unshare --net; Arelle offline; fresh per-case user cache",
+  "cases": [
+    {
+      "id": "FRS-101",
+      "status": "pass",
+      "exit_code": 0,
+      "findings": [
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        }
+      ]
+    },
+    {
+      "id": "FRS-102",
+      "status": "pass",
+      "exit_code": 0,
+      "findings": [
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        }
+      ]
+    },
+    {
+      "id": "IFRS",
+      "status": "pass",
+      "exit_code": 0,
+      "findings": [
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        }
+      ]
+    }
+  ],
+  "observed_on": "2026-09-28"
+}

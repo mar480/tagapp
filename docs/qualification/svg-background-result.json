@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "scope": "First page only, rejected graphics workaround",
+  "conversion": {
+    "source_sha256": "f8ada8df24f31c6dc1d251169e9586617d73b7fc21a83b60290e7f3b76f77b9b",
+    "converter_sha256": "11de2583a3abce5f141fd7fafb1fea2c67b15886e546d6b7675c600012e6ab8c",
+    "converter_options": [
+      "--tounicode",
+      "1",
+      "--bg-format",
+      "svg",
+      "--first-page",
+      "1",
+      "--last-page",
+      "1"
+    ],
+    "exit_code": 0,
+    "html_sha256": "a82032e5c82c0c40b354bdf60620a2a776ac68bee2914ddfbfaa38a3efb84b20"
+  },
+  "visual": {
+    "status": "measured_review_pending",
+    "pdf_size": [
+      596,
+      842
+    ],
+    "html_size": [
+      596,
+      842
+    ],
+    "mean_absolute_channel_error": 62.6517,
+    "pixels_differing_over_32_fraction": 0.493665,
+    "unmatched_pdf_ink_fraction": 0.963624,
+    "unmatched_html_ink_fraction": 0.001424
+  },
+  "conclusion": "SVG background output does not restore the graphics lost by this build; do not expand this experiment to 108 pages."
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "review_required",
+  "source_sha256": "f8ada8df24f31c6dc1d251169e9586617d73b7fc21a83b60290e7f3b76f77b9b",
+  "html_sha256": "2497f06490dd389ca42c56c02ab710ee6e5b2b0f5a8831b38c9b742a01437a21",
+  "reference_bbox_sha256": "cc8d35217ba894037893053adb17178eb55c4a66bf590ad36360a792e94199c4",
+  "source_codepoint": "U+2011",
+  "converted_codepoint": "U+002D",
+  "comparison_after_nfkc": "U+2010 versus U+002D",
+  "occurrences": 16,
+  "unique_candidates": 8,
+  "ambiguous_candidates": 4,
+  "unmatched_candidates": 0,
+  "affected_pages": [
+    6,
+    7,
+    63,
+    65,
+    78,
+    85
+  ],
+  "repairs_applied": 0,
+  "production_qualified": false
+}

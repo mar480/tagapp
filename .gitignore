@@ -1,0 +1,39 @@
+# Supplied reference material stays local. Ignoring does not untrack files.
+/materials/
+/tagapp-materials/
+/*.git/
+*.bundle
+
+# Private tools, processors, evidence, reports, credentials and model files.
+/.local/
+/runtime/
+/storage/
+/backups/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+*.gguf
+*.safetensors
+
+# Build/dependency artefacts.
+.venv/
+venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+coverage/
+dist/
+build/
+test-results/
+playwright-report/
+.DS_Store

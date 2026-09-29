@@ -1,0 +1,106 @@
+{
+  "schema_version": 1,
+  "checked_on": "2026-09-28",
+  "sources": [
+    {
+      "id": "ch-accounts",
+      "title": "Companies House TIS for accounts",
+      "authority": "Companies House",
+      "url": "https://assets.publishing.service.gov.uk/media/6ab53893fceb6fb3a65011b6/TIS_September_2026.odt",
+      "local_path": "materials/inbox/companies house guidance/Companies_House_TIS for accounts.odt",
+      "sha256": "6c1e4d516b8dae50e1c34e9b453c5209f6958034cddb88f1ceb7e5ff331cd05d",
+      "version": "6.0",
+      "verification": "Local bytes matched official download during intake",
+      "issues": [
+        "Cover issue date 2026-09-29; publication page updated 2026-09-25.",
+        "Reconcile older auditor concepts in generic sections with selected taxonomy version."
+      ],
+      "publication": "Original retained locally; derived attribution under OGL v3 subject to third-party exceptions"
+    },
+    {
+      "id": "ch-filing",
+      "title": "Companies House TIS for filing",
+      "authority": "Companies House",
+      "url": "https://assets.publishing.service.gov.uk/media/66618d1d2aec9626ea8805c1/Companies_House_TIS_v5.3.odt",
+      "local_path": "materials/inbox/companies house guidance/Companies_House_TIS for filing_v5.3.odt",
+      "sha256": "6155aacfdb2d80369abc8d12f82eb6ff5ad52c8667cd5079b279b6a4b5649e80",
+      "version": "5.3 filename / 5.2 cover / 5.03 change log",
+      "verification": "Local bytes matched official download during intake",
+      "issues": [
+        "Conflicting version labels",
+        "Resolve GatewayTest lexical value against pinned schema"
+      ],
+      "publication": "Original retained locally; derived attribution under OGL v3 subject to third-party exceptions"
+    },
+    {
+      "id": "ch-read-first",
+      "title": "Companies House software developer onboarding",
+      "authority": "Companies House",
+      "url": "https://www.gov.uk/government/publications/technical-interface-specifications-for-companies-house-software/important-information-for-software-developers-read-first",
+      "version": "Updated 2026-09-25",
+      "verification": "Official web page reviewed"
+    },
+    {
+      "id": "frc-suite",
+      "title": "2026 FRC Taxonomy Suite v1.0.0",
+      "authority": "FRC",
+      "url": "https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/frc-taxonomies/current-uk-and-irish-digital-reporting-taxonomies/2026-uk-and-irish-digital-reporting-taxonomies/",
+      "artifact_url": "https://www.frc.org.uk/documents/8907/FRC-2026-Taxonomy-v1.0.0.zip",
+      "version": "1.0.0, published 2025-11-18",
+      "sha256": "ae80ae12d9d747ac531150b0051bcd67e7c9acf44313da19105b4cc013566462",
+      "verification": "Official archive acquired after retry with ordinary browser headers; local manifest/catalog inspected; FRS101, FRS102 and IFRS passed offline Arelle load/validation with fresh user caches",
+      "publication": "Retain packages locally pending distribution review"
+    },
+    {
+      "id": "frc-guidance",
+      "title": "FRC Taxonomies Documentation and Guidance",
+      "authority": "FRC",
+      "url": "https://www.frc.org.uk/library/standards-codes-policy/accounting-and-reporting/frc-taxonomies/uk-and-irish-digital-reporting-taxonomies-guide/",
+      "version": "Supplied design, developer and tagging PDFs: v13.0, 2025-11-18",
+      "verification": "Local metadata reviewed; checksums in materials-manifest.json; remote byte identity not verified",
+      "publication": "Do not republish PDFs without confirming FRC terms"
+    },
+    {
+      "id": "frc-copyright",
+      "title": "FRC copyright terms",
+      "authority": "FRC",
+      "url": "https://www.frc.org.uk/about-us/policies-and-procedures/disclaimer-and-copyright/",
+      "verification": "Reference reviewed; public availability does not establish redistribution permission"
+    },
+    {
+      "id": "ixbrl11",
+      "title": "Inline XBRL 1.1 work product index",
+      "authority": "XBRL International",
+      "url": "https://specifications.xbrl.org/work-product-index-inline-xbrl-inline-xbrl-1.1.html",
+      "verification": "Reference reviewed; specification and conformance-suite artefact pins remain outstanding"
+    },
+    {
+      "id": "wcag22",
+      "title": "Web Content Accessibility Guidelines 2.2",
+      "authority": "W3C",
+      "url": "https://www.w3.org/TR/WCAG22/",
+      "verification": "AA is the application acceptance target; no accessibility audit performed"
+    },
+    {
+      "id": "independent-processor",
+      "title": "RaptorXML+XBRL processor listing",
+      "authority": "XBRL International",
+      "url": "https://software.xbrl.org/processor/altova-raptorxml-xbrl-server",
+      "verification": "Listing reviewed; local licensed executable unavailable"
+    },
+    {
+      "id": "converter",
+      "title": "pdf2htmlEX releases",
+      "authority": "pdf2htmlEX maintainers",
+      "url": "https://github.com/pdf2htmlEX/pdf2htmlEX/releases",
+      "verification": "Official v0.18.8.rc1 focal AppImage downloaded and synthetic probe executed; not a production-qualified build"
+    },
+    {
+      "id": "converter-license",
+      "title": "pdf2htmlEX licence",
+      "authority": "pdf2htmlEX maintainers",
+      "url": "https://raw.githubusercontent.com/pdf2htmlEX/pdf2htmlEX/master/LICENSE",
+      "verification": "GPLv3-or-later with separately licensed resources; distribution obligations remain to be reviewed"
+    }
+  ]
+}

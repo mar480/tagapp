@@ -1,0 +1,115 @@
+{
+  "schema_version": 1,
+  "artifact_sha256": "11de2583a3abce5f141fd7fafb1fea2c67b15886e546d6b7675c600012e6ab8c",
+  "artifact_url": "https://github.com/pdf2htmlEX/pdf2htmlEX/releases/download/v0.18.8.rc1/pdf2htmlEX-0.18.8.rc1-master-20200630-Ubuntu-focal-x86_64.AppImage",
+  "scope": "synthetic feasibility only",
+  "network": "bubblewrap --unshare-all",
+  "production_qualified": false,
+  "cases": [
+    {
+      "status": "pass",
+      "missing": [],
+      "id": "financial-text",
+      "pdf_sha256": "b7077e74c57d9db00620671a7bc4c0b6883e45fe35e3b08e0e77b5769713f8ed",
+      "source_text": {
+        "status": "pass",
+        "missing": []
+      },
+      "exit_code": 0,
+      "script_elements": 3,
+      "html_sha256": "2525fddb0a3c660837d8bccff75d697007ce5be5af7c43a681fff3b902c5996c",
+      "expected": "text_preserved",
+      "expectation_met": true
+    },
+    {
+      "status": "pass",
+      "missing": [],
+      "id": "fragmented-number",
+      "pdf_sha256": "25af02c7e1a4bbe921d1de266b8bf17c89bcfa0bf0539a9564d14408b317f80e",
+      "source_text": {
+        "status": "pass",
+        "missing": []
+      },
+      "exit_code": 0,
+      "script_elements": 3,
+      "html_sha256": "479725de8e7e1e9f587ce9040e6419be6a6eda514f69a5361fd39bc2ff1e0a49",
+      "expected": "text_preserved",
+      "expectation_met": true
+    },
+    {
+      "status": "pass",
+      "missing": [],
+      "id": "rotated-text",
+      "pdf_sha256": "6d0a8fddc63340f1c27252bbad0538caafbbb9ce962e13875518cc9e21443edf",
+      "source_text": {
+        "status": "pass",
+        "missing": []
+      },
+      "exit_code": 0,
+      "script_elements": 3,
+      "html_sha256": "2d760d9b599518e6528407172762405857b3f4a4330ec7f73418bbdb8a0bb4aa",
+      "expected": "text_preserved",
+      "expectation_met": true
+    },
+    {
+      "status": "unsupported_image_only",
+      "missing": [],
+      "id": "image-only",
+      "pdf_sha256": "5a72913f87a13317dc0944db0682e5512fe36eeb6ecbf8f4a867ffd244269ea6",
+      "source_text": {
+        "status": "unsupported_image_only",
+        "missing": []
+      },
+      "exit_code": 0,
+      "script_elements": 3,
+      "html_sha256": "15604b5c12b862fb89d636a9daed040c13f75701051b0514bac295221742b700",
+      "expected": "image_only",
+      "expectation_met": true
+    },
+    {
+      "status": "pass",
+      "missing": [],
+      "id": "correct-unicode-map",
+      "pdf_sha256": "a8a7bf32df4d9f767cfe7b32f063b65d049b4f5d0fb416b8b229213fbd603099",
+      "source_text": {
+        "status": "pass",
+        "missing": []
+      },
+      "exit_code": 0,
+      "script_elements": 3,
+      "html_sha256": "637692691a6e9415b2b91cc08c2133d53e5de7cef68204a4fa850cd4f4a0cc28",
+      "expected": "text_preserved",
+      "expectation_met": true
+    },
+    {
+      "status": "fail",
+      "missing": [
+        "12.34"
+      ],
+      "id": "incorrect-unicode-map",
+      "pdf_sha256": "fe3ee997e2dd15c72eba398d55e63081051778bdfdc925252c7ccff3d535ab58",
+      "source_text": {
+        "status": "fail",
+        "missing": [
+          "12.34"
+        ]
+      },
+      "exit_code": 0,
+      "script_elements": 3,
+      "html_sha256": "31379faec0542e7b772196414ac9728491888ccde749623d2e20167fed5492c0",
+      "expected": "text_mismatch",
+      "expectation_met": true
+    }
+  ],
+  "observed_on": "2026-09-28",
+  "unicode_visual_comparison": {
+    "renderer": "local pdftoppm; single page at scale-to 800",
+    "png_sha256": {
+      "correct-unicode-map": "ec43af8190b5d8830e1a82935eaf8ab3e745ede32123aa391e7280d629ffa737",
+      "incorrect-unicode-map": "ec43af8190b5d8830e1a82935eaf8ab3e745ede32123aa391e7280d629ffa737"
+    },
+    "identical_raster": true,
+    "visually_inspected_amount": "12.34",
+    "incorrect_map_extracted_amount": "72.34"
+  }
+}

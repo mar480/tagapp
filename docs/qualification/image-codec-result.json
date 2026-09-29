@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "scope": "Synthetic image-presence regression, not visual conformance",
+  "converter_sha256": "11de2583a3abce5f141fd7fafb1fea2c67b15886e546d6b7675c600012e6ab8c",
+  "decoded_source_pixels_identical": true,
+  "cases": [
+    {
+      "codec": "FlateDecode",
+      "pdf_sha256": "941305cab2cce3252e5be1af2dae77893f4ca58c97d51ba28bd0903c5731b145",
+      "source_dark_pixels": 20200,
+      "background_dark_pixels": 80882,
+      "background_images": 1,
+      "status": "image_present"
+    },
+    {
+      "codec": "JPXDecode",
+      "pdf_sha256": "92195378bcf108588801a4844b431955105ff4261488c307d50164aba0b21cb8",
+      "source_dark_pixels": 20200,
+      "background_dark_pixels": 479,
+      "background_images": 1,
+      "status": "image_missing"
+    }
+  ],
+  "production_qualified": false
+}

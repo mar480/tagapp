@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "use": "Local qualification only; separate from application runtime",
+  "playwright_version": "1.63.0",
+  "packages": [
+    {
+      "version": "1.63.0",
+      "resolved": "https://registry.npmjs.org/playwright/-/playwright-1.63.0.tgz",
+      "integrity": "sha512-+7ziBLidS4NaNCdt57SUDT+wYmmd5fmiQejUic/kb+YsYSCPyOOE9sebzMjNmQrsnNpDJqd4WHvV/8lfKfUDUg==",
+      "license": "Apache-2.0",
+      "name": "playwright"
+    },
+    {
+      "version": "1.63.0",
+      "resolved": "https://registry.npmjs.org/playwright-core/-/playwright-core-1.63.0.tgz",
+      "integrity": "sha512-rYCsBF/M5HjUch52bbtVONEFjv6Xu8sm8h72dNlR5bzIE1fvC/bxgspzkjSfU+MweEMmPM8KJebG6nnyxo5mCg==",
+      "license": "Apache-2.0",
+      "name": "playwright-core"
+    }
+  ],
+  "package_lock_sha256": "aedbce85b8e93993f830df9b4f1ea4f839ef0e6b47b1d3508fe7e31137618a12",
+  "browser": {
+    "name": "Chrome Headless Shell",
+    "version": "153.0.8010.12",
+    "playwright_revision": "1243",
+    "download_url": "https://cdn.playwright.dev/builds/cft/153.0.8010.12/linux64/chrome-headless-shell-linux64.zip",
+    "binary_relative_path": "browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell",
+    "binary_sha256": "ded93a9c9a53a1ae040f08124badcca95c938e9d5015ff340c3b5538c41bf39e",
+    "pin_kind": "Observed downloaded executable bytes, not publisher signature"
+  },
+  "node_version": "v24.17.0",
+  "documentation": "https://playwright.dev/docs/browsers",
+  "notes": [
+    "Playwright 1.58.2 rejected Ubuntu 26.04; 1.63.0 was selected and installed without npm lifecycle scripts.",
+    "Browser and npm packages remain under ignored local tools.",
+    "Chromium internal sandbox defaults to disabled in this harness; report worker uses outer bubblewrap filesystem, PID and network namespaces and no capabilities.",
+    "This does not constitute production browser/converter security qualification."
+  ]
+}

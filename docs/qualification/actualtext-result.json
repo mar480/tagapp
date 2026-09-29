@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "scope": "Public synthetic ActualText regression; mismatches are not approved conversion",
+  "converter_sha256": "7a77a599dd96511e76352ad672b774d076fbefd7cc21b19fa88b8854b7b4afa8",
+  "converter_options": [
+    "--tounicode",
+    "1"
+  ],
+  "cases": [
+    {
+      "case": "ordinary-hyphen",
+      "source_sha256": "32e05fa2826abb0c264cb7307a3bb7fa8fe84a416616c21791e027467bf709cb",
+      "reference_matches_authored": true,
+      "html_matches_observed_expectation": true,
+      "logical_text_preserved": true,
+      "html_sha256": "6247b4fa602e6e32559e1489108b1da19ca14a03462eaa98d8621aea49237ce6",
+      "status": "preserved"
+    },
+    {
+      "case": "actualtext-hyphen",
+      "source_sha256": "9fb975d065d657c8f213a3b0fb58a3d2623afcda8652e7fa0582c275c8cb1fa8",
+      "reference_matches_authored": true,
+      "html_matches_observed_expectation": true,
+      "logical_text_preserved": false,
+      "html_sha256": "2af03262d90341ddc63e9da50e09ab25d759e29276e1e197ae23d08cfb0a0b42",
+      "status": "semantic_difference"
+    },
+    {
+      "case": "tounicode-hyphen",
+      "source_sha256": "ac9d6b6130011f4a4b2dfd4c3ab0fc495ecd0f1ccf29b2c0d92b15b59858ae62",
+      "reference_matches_authored": true,
+      "html_matches_observed_expectation": true,
+      "logical_text_preserved": true,
+      "html_sha256": "82b1a54ff597cd4a732fb3ee72efb298095df19b1c525d63e0918fe852f9aaae",
+      "status": "preserved"
+    },
+    {
+      "case": "actualtext-identical",
+      "source_sha256": "e0aa59eaf55310d729d76a50ffb0b73e58a947058f744633f7b7d274a95c0827",
+      "reference_matches_authored": true,
+      "html_matches_observed_expectation": true,
+      "logical_text_preserved": true,
+      "html_sha256": "ed7fb71b7bf42b24797d0825d30d5c66ecea4390b381aed50cde14612de44014",
+      "status": "preserved"
+    },
+    {
+      "case": "actualtext-conflicting-number",
+      "source_sha256": "d0d817f2607f4d46aab70df85e6a68b6e2df1903bd9fbb72b414d83f4a614892",
+      "reference_matches_authored": true,
+      "html_matches_observed_expectation": true,
+      "logical_text_preserved": false,
+      "html_sha256": "a6813a637cd93d28646322319c120437fad3216cd61b95c5b9e0d30402ff9daa",
+      "status": "semantic_difference"
+    }
+  ],
+  "production_qualified": false,
+  "hypothesis_reproduced": true
+}

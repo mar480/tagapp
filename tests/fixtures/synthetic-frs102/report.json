@@ -1,0 +1,680 @@
+{
+  "schema_version": 1,
+  "id": "synthetic-frs102-v1",
+  "classification": "synthetic_development_fixture_not_statutory_accounts",
+  "taxonomy_sha256": "ae80ae12d9d747ac531150b0051bcd67e7c9acf44313da19105b4cc013566462",
+  "years": {
+    "current": 2025,
+    "prior": 2024
+  },
+  "pages": [
+    {
+      "id": "cover",
+      "title": "Synthetic financial report",
+      "paragraphs": [
+        "Aster Demonstration Manufacturing Limited - entirely fictional test entity.",
+        "Illustrative financial information for the year ended 31 December 2025, with 2024 comparatives.",
+        "This document is a software development fixture. It is not a complete set of statutory accounts, does not assert compliance with FRS 102 and must not be filed.",
+        "All names, transactions and figures were created for testing. The report contains no client data.",
+        "The source specification and expected tagging candidates are versioned separately from converter output."
+      ],
+      "rows": []
+    },
+    {
+      "id": "directors",
+      "title": "Directors report - illustrative narrative",
+      "paragraphs": [
+        "The fictional entity manufactures demonstration components. Revenue increased during the year as production capacity expanded.",
+        "The board monitors working capital, equipment utilisation and customer concentration. No statement here describes a real business.",
+        "Repeated text for anchor testing: The report is prepared for software testing only.",
+        "This section provides paragraphs and repeated phrases for free text selection and report navigation."
+      ],
+      "rows": []
+    },
+    {
+      "id": "income",
+      "title": "Statement of income - GBP",
+      "paragraphs": [
+        "Amounts are expressed in pounds. Expenses are displayed as positive amounts and subtracted in the reconciliations."
+      ],
+      "rows": [
+        {
+          "id": "revenue",
+          "label": "Revenue",
+          "current": "1500000",
+          "prior": "1250000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "TurnoverRevenue",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "cost-sales",
+          "label": "Cost of sales",
+          "current": "900000",
+          "prior": "760000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "CostSales",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "gross-profit",
+          "label": "Gross profit",
+          "current": "600000",
+          "prior": "490000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "GrossProfitLoss",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "administration",
+          "label": "Administrative expenses",
+          "current": "380000",
+          "prior": "310000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "AdministrativeExpenses",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "operating-profit",
+          "label": "Operating profit",
+          "current": "220000",
+          "prior": "180000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "OperatingProfitLoss",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "interest",
+          "label": "Finance costs",
+          "current": "20000",
+          "prior": "18000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "InterestPayableSimilarChargesFinanceCosts",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "profit-before-tax",
+          "label": "Profit before tax",
+          "current": "200000",
+          "prior": "162000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "ProfitLossOnOrdinaryActivitiesBeforeTax",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "tax",
+          "label": "Tax expense",
+          "current": "50000",
+          "prior": "40500",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "TaxTaxCreditOnProfitOrLossOnOrdinaryActivities",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "profit",
+          "label": "Profit for the year",
+          "current": "150000",
+          "prior": "121500",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "ProfitLoss",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "position",
+      "title": "Statement of financial position - GBP",
+      "paragraphs": [
+        "Comparatives are at 31 December 2024. Current-year balances are at 31 December 2025. Creditors require a reviewed maturity context before tagging."
+      ],
+      "rows": [
+        {
+          "id": "fixed-assets",
+          "label": "Property, plant and equipment",
+          "current": "600000",
+          "prior": "520000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "PropertyPlantEquipment",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "inventory",
+          "label": "Inventories",
+          "current": "200000",
+          "prior": "180000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "TotalInventories",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "debtors",
+          "label": "Debtors",
+          "current": "180000",
+          "prior": "150000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "Debtors",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "cash",
+          "label": "Cash at bank",
+          "current": "120000",
+          "prior": "90000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "CashBankOnHand",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "current-assets",
+          "label": "Total current assets",
+          "current": "500000",
+          "prior": "420000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "CurrentAssets",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "current-creditors",
+          "label": "Creditors due within one year",
+          "current": "250000",
+          "prior": "220000",
+          "unit": "GBP"
+        },
+        {
+          "id": "net-current",
+          "label": "Net current assets",
+          "current": "250000",
+          "prior": "200000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "NetCurrentAssetsLiabilities",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "assets-less-current",
+          "label": "Assets less current liabilities",
+          "current": "850000",
+          "prior": "720000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "TotalAssetsLessCurrentLiabilities",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "long-creditors",
+          "label": "Creditors due after one year",
+          "current": "300000",
+          "prior": "280000",
+          "unit": "GBP"
+        },
+        {
+          "id": "net-assets",
+          "label": "Net assets",
+          "current": "550000",
+          "prior": "440000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "NetAssetsLiabilities",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "equity",
+      "title": "Equity and changes in equity - GBP",
+      "paragraphs": [
+        "The two equity components are candidates for explicit EquityClassesDimension tagging; their dimensional applicability has not yet been processor-qualified."
+      ],
+      "rows": [
+        {
+          "id": "capital",
+          "label": "Share capital",
+          "current": "100000",
+          "prior": "100000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "Equity",
+            "period_type": "instant",
+            "dimensions": [
+              {
+                "dimension": {
+                  "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+                  "local_name": "EquityClassesDimension"
+                },
+                "member": {
+                  "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+                  "local_name": "ShareCapital"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "retained",
+          "label": "Retained earnings",
+          "current": "450000",
+          "prior": "340000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "Equity",
+            "period_type": "instant",
+            "dimensions": [
+              {
+                "dimension": {
+                  "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+                  "local_name": "EquityClassesDimension"
+                },
+                "member": {
+                  "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+                  "local_name": "RetainedEarningsAccumulatedLosses"
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "total-equity",
+          "label": "Total equity",
+          "current": "550000",
+          "prior": "440000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "Equity",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "opening-equity",
+          "label": "Opening total equity",
+          "current": "440000",
+          "prior": "340500",
+          "unit": "GBP"
+        },
+        {
+          "id": "equity-profit",
+          "label": "Profit for the year",
+          "current": "150000",
+          "prior": "121500",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "ProfitLoss",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "dividends",
+          "label": "Dividends paid",
+          "current": "40000",
+          "prior": "22000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "DividendsPaid",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "cashflows",
+      "title": "Illustrative cash reconciliation - GBP",
+      "paragraphs": [
+        "This simplified reconciliation tests signs and subtotals. It is not a complete statutory cash flow statement."
+      ],
+      "rows": [
+        {
+          "id": "opening-cash",
+          "label": "Cash at start of year",
+          "current": "90000",
+          "prior": "70000",
+          "unit": "GBP"
+        },
+        {
+          "id": "operating-cash",
+          "label": "Operating cash inflow",
+          "current": "190000",
+          "prior": "132000",
+          "unit": "GBP"
+        },
+        {
+          "id": "capex",
+          "label": "Purchase of equipment",
+          "current": "-140000",
+          "prior": "-100000",
+          "unit": "GBP"
+        },
+        {
+          "id": "new-borrowing",
+          "label": "Net new borrowing",
+          "current": "20000",
+          "prior": "10000",
+          "unit": "GBP"
+        },
+        {
+          "id": "cash-dividends",
+          "label": "Dividends paid",
+          "current": "-40000",
+          "prior": "-22000",
+          "unit": "GBP"
+        },
+        {
+          "id": "cash-increase",
+          "label": "Increase in cash",
+          "current": "30000",
+          "prior": "20000",
+          "unit": "GBP"
+        },
+        {
+          "id": "closing-cash",
+          "label": "Cash at end of year",
+          "current": "120000",
+          "prior": "90000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "CashCashEquivalents",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "basis",
+      "title": "Note 1 - basis and selection exercise",
+      "paragraphs": [
+        "Amounts use exact decimal strings in the source specification. Displayed grouping separators do not change the intended numerical value.",
+        "Narrative selection may start in this paragraph and continue into the next block. This supports testing continuations without altering source text.",
+        "The report is prepared for software testing only.",
+        "The repeated sentence also appears on another page. A source anchor must identify its occurrence and must not move silently after edits."
+      ],
+      "rows": []
+    },
+    {
+      "id": "policies",
+      "title": "Note 2 - illustrative accounting policies",
+      "paragraphs": [
+        "Revenue is illustrated as amounts from the fictional sale of manufactured products. This policy is narrative test content, not accounting advice.",
+        "Equipment is illustrated at historical cost less depreciation. Inventories and receivables are used to test current-asset tagging.",
+        "The paragraph deliberately continues across the page boundary. The continuation on the next page must remain traceable to its original source selection."
+      ],
+      "rows": []
+    },
+    {
+      "id": "policy-continuation",
+      "title": "Note 2 continued",
+      "paragraphs": [
+        "Continuation of the preceding paragraph: a reviewable continuation retains order and does not repeat or omit words in the generated fact.",
+        "Footnote exercise [1]: a footnote can refer to more than one fact. A reference marker is visible content, not automatically a fact value.",
+        "[1] All figures and descriptions in this document are synthetic."
+      ],
+      "rows": []
+    },
+    {
+      "id": "assets-note",
+      "title": "Note 3 - equipment reconciliation - GBP",
+      "paragraphs": [
+        "The current-year closing amount reconciles to opening equipment plus additions less depreciation."
+      ],
+      "rows": [
+        {
+          "id": "equipment-opening",
+          "label": "Opening equipment",
+          "current": "520000",
+          "prior": "475000",
+          "unit": "GBP"
+        },
+        {
+          "id": "equipment-additions",
+          "label": "Additions",
+          "current": "140000",
+          "prior": "100000",
+          "unit": "GBP"
+        },
+        {
+          "id": "depreciation",
+          "label": "Depreciation charge",
+          "current": "60000",
+          "prior": "55000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "DepreciationExpensePropertyPlantEquipment",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "equipment-closing",
+          "label": "Closing equipment",
+          "current": "600000",
+          "prior": "520000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "PropertyPlantEquipment",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "working-capital",
+      "title": "Note 4 - working capital - GBP",
+      "paragraphs": [
+        "Repeated disclosures intentionally reuse values already present in the balance sheet. Repeated values must not be mistaken for the same source occurrence."
+      ],
+      "rows": [
+        {
+          "id": "note-inventory",
+          "label": "Inventories",
+          "current": "200000",
+          "prior": "180000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "TotalInventories",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "note-debtors",
+          "label": "Trade and other debtors",
+          "current": "180000",
+          "prior": "150000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "Debtors",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "note-cash",
+          "label": "Cash at bank",
+          "current": "120000",
+          "prior": "90000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "CashBankOnHand",
+            "period_type": "instant",
+            "dimensions": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "employees",
+      "title": "Note 5 - employees and administrative costs",
+      "paragraphs": [
+        "Employee counts use a pure unit. Monetary amounts use GBP; table defaults must not leak between these rows."
+      ],
+      "rows": [
+        {
+          "id": "employees-average",
+          "label": "Average number of employees",
+          "current": "12",
+          "prior": "10",
+          "unit": "pure",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "AverageNumberEmployeesDuringPeriod",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        },
+        {
+          "id": "admin-repeat",
+          "label": "Administrative expenses - GBP",
+          "current": "380000",
+          "prior": "310000",
+          "unit": "GBP",
+          "expected_tag": {
+            "namespace": "http://xbrl.frc.org.uk/fr/2026-01-01/core",
+            "local_name": "AdministrativeExpenses",
+            "period_type": "duration",
+            "dimensions": []
+          }
+        }
+      ]
+    },
+    {
+      "id": "precision",
+      "title": "Note 6 - numeric tagging exercises",
+      "paragraphs": [
+        "These exercise rows are separate from the financial statements. They test cents, zero, negative display and amounts that repeat elsewhere.",
+        "An em dash representing unavailable information must not be silently converted to zero or nil. Nil and absent require separate reviewed tagging decisions."
+      ],
+      "rows": [
+        {
+          "id": "exact-cents",
+          "label": "Exact cents",
+          "current": "1234.50",
+          "prior": "987.00",
+          "unit": "GBP"
+        },
+        {
+          "id": "negative-cents",
+          "label": "Negative amount",
+          "current": "-12.34",
+          "prior": "-10.00",
+          "unit": "GBP"
+        },
+        {
+          "id": "zero",
+          "label": "Zero amount",
+          "current": "0.00",
+          "prior": "0.00",
+          "unit": "GBP"
+        }
+      ]
+    },
+    {
+      "id": "dimensions",
+      "title": "Note 7 - dimensions and table tagging",
+      "paragraphs": [
+        "The equity table provides explicit-dimension tagging candidates. Row and column defaults require review before bulk application.",
+        "Typed dimensions are tested by separate technical conformance fixtures when the selected filing profile does not permit them. They are not disguised as valid FRC filing facts in this report.",
+        "Duplicate concepts in different contexts and repeated disclosures are intentional. Dimensional validity is a later acceptance test, not implied by concept existence."
+      ],
+      "rows": []
+    },
+    {
+      "id": "review",
+      "title": "Note 8 - review and carry-forward exercises",
+      "paragraphs": [
+        "A revised fixture should change one amount, insert a paragraph before a tagged sentence and remove one repeated disclosure.",
+        "Carry-forward must present changed, ambiguous and unmatched anchors for review. An identical phrase on another page must not silently receive the old tag.",
+        "This report is designed for conversion and tagging development. It is not an independently validated filing example."
+      ],
+      "rows": []
+    },
+    {
+      "id": "provenance",
+      "title": "Fixture provenance and limits",
+      "paragraphs": [
+        "Source: newly authored synthetic content in this repository. No Charles or Soft uploaded account content has been copied.",
+        "Taxonomy reference: FRC 2026 v1.0.0, FRS 102 entry point. Concept identifiers were checked against the pinned package; dimensional validity is not yet qualified.",
+        "Stable page, row and year identifiers identify expected source occurrences. The generator emits PDF, semantic XHTML reference and expected tagging candidates.",
+        "Deliberate numeric and document mutation cases are used to test detection. They are never suitable for submission."
+      ],
+      "rows": []
+    }
+  ]
+}

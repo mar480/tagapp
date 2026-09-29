@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "fixture": "synthetic-frs102-v1",
+  "pages": 16,
+  "candidate_facts": 60,
+  "spec_sha256": "2709640c54a924bd7a3c1f7802eb5db599ceb7db9db65ef92063254f6adcac00",
+  "files": {
+    "report.pdf": "37939d338c52ed62494a49554683c92d0332168d38062520a7b9116d5a2e9285",
+    "reference.xhtml": "469b4311b13f87e773a3c5249d87accdc4bb9aaf750cff818ae1a4ae772ff30d",
+    "expected-facts.json": "1d439e1783eb85978603046ef999a37a342eeb70639f82615ecce23651b80b24"
+  },
+  "qualification": "arithmetic checked; not complete statutory accounts or a qualified filing fixture",
+  "taxonomy_check": {
+    "status": "pass",
+    "candidate_rows": 30,
+    "scope": "Concept existence, period type and dimension identifiers only; dimensional validity not checked"
+  },
+  "observed_on": "2026-09-28"
+}

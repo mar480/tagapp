@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-29",
+  "scope": "ActualText cause isolation, private repair locators and raw Unicode hyphen integrity",
+  "checks": [
+    {
+      "command": "python3 -m tools.baseline.actualtext_probe",
+      "exit_code": 1,
+      "cases": 5,
+      "authored_reference_expectations_met": 5,
+      "semantic_differences": 2,
+      "interpretation": "Converter limitation reproduced; not qualification success"
+    },
+    {
+      "command": "python3 -m tools.baseline.punctuation_probe",
+      "exit_code": 1,
+      "occurrences": 16,
+      "word_groups": 12,
+      "unique_groups": 8,
+      "ambiguous_groups": 4,
+      "unmatched_groups": 0,
+      "repairs_applied": 0
+    },
+    {
+      "command": "Existing hashed HTML/source text reanalysis with compare()",
+      "status": "review_required",
+      "pages": 108,
+      "numeric_occurrences": 3467,
+      "missing_numeric_occurrences": 0,
+      "added_numeric_occurrences": 0,
+      "raw_hyphen_change_pages": 6
+    },
+    {
+      "command": "python3 -m unittest discover -s tests/baseline -q",
+      "exit_code": 0,
+      "tests": 59
+    },
+    {
+      "command": "python3 -m tools.baseline.check --local-materials",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard --worktree",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard",
+      "exit_code": 0
+    }
+  ],
+  "source_hashes": {
+    "tools/baseline/actualtext_probe.py": "f7732bc49f11e08324931f3cb81451d96e4e149e4948cc0fb9703098081a868f",
+    "tools/baseline/punctuation_probe.py": "9754fdb34fc08d4552ee34d95bea6496ff8d966d446a14d187a769bf09bf79c1",
+    "tools/baseline/illustrative_probe.py": "140f25a7d11172d88a9c6690066aa267ebdbff2613f3e0e523839a11ab76ed34",
+    "tests/baseline/test_punctuation_probe.py": "fca103bea0b3b587e097132e3d3526c436aa08cf0ed4b65388680810718cff00",
+    "tests/baseline/test_illustrative_probe.py": "447abf2707b131bca9558b3c4afb9b78df24d8e410b2e4345038c22bf2996dee"
+  },
+  "source_metadata_observation": {
+    "method": "Bounded inspection of Flate streams in the checksum-registered local fixture; diagnostic only, not a general PDF parser",
+    "maximum_decoded_stream_bytes": 2097152,
+    "utf16_bom_actualtext_hex_strings": 407,
+    "actualtext_nonbreaking_hyphens": 16,
+    "raw_extracted_U2011": 16,
+    "raw_extracted_U2010": 0
+  },
+  "milestone_complete": false,
+  "production_qualified": false,
+  "next_work": "Outstanding profile applicability and normative asset evidence; carry ActualText and visual review requirements into the conversion/repair milestone."
+}

@@ -1,0 +1,510 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-28",
+  "repositories": [
+    {
+      "name": "charles",
+      "bundle_path": "tagapp-materials/repos/charles.bundle",
+      "size_bytes": 128051318,
+      "sha256": "1e1bee2ebe6f30063e4bda3f0936eadf3f2f969abd2456baedb87ea86b609233",
+      "branch": "oneshot",
+      "commit": "822051c304abc07f2cc00345e5a60b15f5fe2369",
+      "default_ref": "refs/heads/oneshot",
+      "refs": [
+        {
+          "commit": "822051c304abc07f2cc00345e5a60b15f5fe2369",
+          "ref": "refs/heads/oneshot"
+        },
+        {
+          "commit": "822051c304abc07f2cc00345e5a60b15f5fe2369",
+          "ref": "HEAD"
+        }
+      ],
+      "publication": "local_only"
+    },
+    {
+      "name": "cake",
+      "bundle_path": "tagapp-materials/repos/cake.bundle",
+      "size_bytes": 147801827,
+      "sha256": "64ba96bc1898b03f1cc73d172a19e5081802f446bb3164af674bfe863feac8d1",
+      "branch": "vps",
+      "commit": "9251b790faa65b78d80dbe4528fcdd3aefef1238",
+      "default_ref": "refs/heads/main",
+      "refs": [
+        {
+          "commit": "64cbc591096aa5bc9432b27b67a54e23037f339e",
+          "ref": "refs/heads/2027"
+        },
+        {
+          "commit": "c4235aaa5b1d5f159b13828c560f687d7ae4793a",
+          "ref": "refs/heads/advanced-search"
+        },
+        {
+          "commit": "ed11981b050879326bd801c047d0780a36c1bb80",
+          "ref": "refs/heads/cache"
+        },
+        {
+          "commit": "5a69ac81caa4db8df184a354a486e5a583ad87b8",
+          "ref": "refs/heads/cache-baseline"
+        },
+        {
+          "commit": "ec3cab805e33ae53b5776f9f019a2ada33aa15bf",
+          "ref": "refs/heads/clean-reference-roles"
+        },
+        {
+          "commit": "30c933ee2e55aff1a2a8aaa92b73047ad58d75e7",
+          "ref": "refs/heads/codex-dev"
+        },
+        {
+          "commit": "e6cf0cff7f029922c455b1b6c0442f953922a02c",
+          "ref": "refs/heads/codex/add-backend-health-check-endpoint"
+        },
+        {
+          "commit": "bc39d6195d597591381a9d4c2cc7239c80517cd5",
+          "ref": "refs/heads/codex/add-shareable-deep-links-to-taxonomy-explorer"
+        },
+        {
+          "commit": "4a50ce0524178f129fb4849015241c5270c136fc",
+          "ref": "refs/heads/codex/add-timing-instrumentation-for-performance-comparison"
+        },
+        {
+          "commit": "386859ae05ac35ba12b5bea72f6ee58b78e34b7a",
+          "ref": "refs/heads/codex/add-url-state-utility-and-navigation-updates"
+        },
+        {
+          "commit": "b4015bc08bba5daf58281f94790a13d6ba3b5dbd",
+          "ref": "refs/heads/codex/add-url-state-utility-and-navigation-updates-6ykbt9"
+        },
+        {
+          "commit": "3a471635cee48e30d20d981848835e551d102fe2",
+          "ref": "refs/heads/codex/add-url-state-utility-and-navigation-updates-g7m4rh"
+        },
+        {
+          "commit": "9b1b34ef179839267bdb6cdd930db3b5b8188d0b",
+          "ref": "refs/heads/codex/add-url-state-utility-and-navigation-updates-pfcqgh"
+        },
+        {
+          "commit": "8b6ab74634bb9d3e695285b423a362cac81fe522",
+          "ref": "refs/heads/codex/create-wsgi-entrypoint-for-production"
+        },
+        {
+          "commit": "fc6db48ddd98dd621975849e869410c6c24b85ca",
+          "ref": "refs/heads/codex/eliminate-global-active-taxonomy-dependency"
+        },
+        {
+          "commit": "45b7a6de385d56a26d329231eaa9ddde476c00d7",
+          "ref": "refs/heads/codex/extend-conceptreference-and-add-display-name-helper"
+        },
+        {
+          "commit": "eaaa3a9353dfac3348853dd3dd6b9da89d12d472",
+          "ref": "refs/heads/codex/fix-csv-file-data-writing-issue"
+        },
+        {
+          "commit": "bc3f121d414d83cffae230e6b33b836d4b466a75",
+          "ref": "refs/heads/codex/fix-csv-file-data-writing-issue-xaztf1"
+        },
+        {
+          "commit": "3e06b2bfedfb47833e7706a2735f0fd392294461",
+          "ref": "refs/heads/codex/handle-400-error-and-implement-retries"
+        },
+        {
+          "commit": "29fa0e1e10af09d9b6d40d9fde43fee40b09791b",
+          "ref": "refs/heads/codex/handle-empty-result-presentation-gracefully"
+        },
+        {
+          "commit": "30c0ff875f4398f94bce2dad14d081c374224d6e",
+          "ref": "refs/heads/codex/handle-empty-result-presentation-gracefully-7pzv83"
+        },
+        {
+          "commit": "8c9eb0c8edc7cc27570f6e1f0a4f5933b24fb851",
+          "ref": "refs/heads/codex/handle-empty-result-presentation-gracefully-b72w42"
+        },
+        {
+          "commit": "c75b75418c80d77099f6ccca8ef2112f38c147f8",
+          "ref": "refs/heads/codex/handle-empty-result-presentation-gracefully-w50pn6"
+        },
+        {
+          "commit": "c96df30d4965ef545ce90d36cae623448665f4b8",
+          "ref": "refs/heads/codex/harden-search-for-multiple-user-entrypoints"
+        },
+        {
+          "commit": "6df0fa8119220c88e8923e33f5b44908e312781a",
+          "ref": "refs/heads/codex/implement-consistent-tree-directory-indexing"
+        },
+        {
+          "commit": "9eac9a2dc55e7b610eb1a5992bbc90d881404879",
+          "ref": "refs/heads/codex/implement-updates-for-lloyd-s-taxonomy"
+        },
+        {
+          "commit": "729a999806136a96232a7dc54c0bec3aa917366f",
+          "ref": "refs/heads/codex/implement-updates-for-lloyd-s-taxonomy-rvn4lm"
+        },
+        {
+          "commit": "65b34e8fa9fdbd4cad9fe7b16c4c4f617aaf0006",
+          "ref": "refs/heads/codex/improve-advanced-search-panel-layout"
+        },
+        {
+          "commit": "f073de1a680dbf0c12d44e1ada242676cca4b00f",
+          "ref": "refs/heads/codex/improve-advanced-search-panel-layout-kkbauu"
+        },
+        {
+          "commit": "9ea6b3d2783b6499fe4d1476373b8baa30589860",
+          "ref": "refs/heads/codex/open-pr-for-pr-e-based-on-updates"
+        },
+        {
+          "commit": "445cb3ae4de9eb48661fd5ce388bb7c978c1f54a",
+          "ref": "refs/heads/codex/open-pr-for-updated-execution-order"
+        },
+        {
+          "commit": "e77ded9a3969a65b001d2c87b3c851adf24921f8",
+          "ref": "refs/heads/codex/refactor-/api/hello-route-implementation"
+        },
+        {
+          "commit": "27b8e2576482223df460e6eac49a69d80554ef1a",
+          "ref": "refs/heads/codex/refactor-concept-details-to-remove-global-taxonomy-dependenc"
+        },
+        {
+          "commit": "ae8979338ba92d835aa7d850410fe6e28a22ce9d",
+          "ref": "refs/heads/codex/refactor-searchresultstab-for-grouped-dropdowns"
+        },
+        {
+          "commit": "befc7b4771cf22292e4ee34a87d12642b6171fd2",
+          "ref": "refs/heads/codex/review-and-begin-implementation-plan-for-feature"
+        },
+        {
+          "commit": "d35ba7bb25548fe7aa49716f7641dd3f2f46d811",
+          "ref": "refs/heads/codex/review-and-open-pr-for-pr-b"
+        },
+        {
+          "commit": "6f5980e4939d63324a3e2e77e236b25b64c1ced7",
+          "ref": "refs/heads/codex/review-refactoring-plan-and-assess-repository"
+        },
+        {
+          "commit": "7735a0224a754d766b7a9dfcacf2326974c5ce89",
+          "ref": "refs/heads/codex/update-advanced-search-results-display"
+        },
+        {
+          "commit": "086e05f89a24b0d972f5bd62d476527031ff6c7b",
+          "ref": "refs/heads/codex/update-backend-reference-generation-for-display-type"
+        },
+        {
+          "commit": "f069c91c90bb479b25b561a1b49956730a078ca3",
+          "ref": "refs/heads/codex/update-concept-reference-extraction-flow"
+        },
+        {
+          "commit": "566d1b31b917ecf94442718cf313bb3e6f0d5736",
+          "ref": "refs/heads/codex/update-detailstab-to-render-type-column"
+        },
+        {
+          "commit": "6e497bcf2b51b99c848c483ec2162b809d058817",
+          "ref": "refs/heads/codex/update-execution-order-in-pr-c"
+        },
+        {
+          "commit": "7d2a0e49c06537f5f2b2f731feaa35af669d76ee",
+          "ref": "refs/heads/codex/update-handler-for-/api/load-entrypoint"
+        },
+        {
+          "commit": "4f642c55303b6272b46a31a01e16bc2754afcb97",
+          "ref": "refs/heads/codex/update-label-retrieval-in-unified_tree_generator"
+        },
+        {
+          "commit": "7a6ce28aaa54616fc4f28dc9a0703a25d8630706",
+          "ref": "refs/heads/codex/update-search-results-dropdown-flow"
+        },
+        {
+          "commit": "0b3226010029ee8eac27b2677d506030878aca2d",
+          "ref": "refs/heads/codex/update-search-results-dropdown-flow-bx5zsw"
+        },
+        {
+          "commit": "9bb59f62812f5d1f327b83146f2da165ce694150",
+          "ref": "refs/heads/codex/update-search-results-dropdown-flow-wucjzr"
+        },
+        {
+          "commit": "5d5b36dbe4b9e2b8efda737c800437535c2af43d",
+          "ref": "refs/heads/csv"
+        },
+        {
+          "commit": "1f8a7cfc33231f0bc77ec5f57a8c223671d2625e",
+          "ref": "refs/heads/feature/taxonomy-deep-links-clean"
+        },
+        {
+          "commit": "b5dd873609b89393b7b92f00807200bdbb282803",
+          "ref": "refs/heads/hr-fix"
+        },
+        {
+          "commit": "acb1d2afa7d8c48e9b8c173aff0c068991e734ea",
+          "ref": "refs/heads/hypercube-relationships"
+        },
+        {
+          "commit": "dd6d4ce8da6fcb0c7b0fc405816ebe2da99106e0",
+          "ref": "refs/heads/linkagg"
+        },
+        {
+          "commit": "c2e1a3d52ef5cbb6fc5dd6c8c03d2833ab3a83b6",
+          "ref": "refs/heads/lloyds-refactor"
+        },
+        {
+          "commit": "3084cb25f8b8ad75c096ff6549f4ef56f564e283",
+          "ref": "refs/heads/main"
+        },
+        {
+          "commit": "1575cde96e73dc1db4cd03a6b477f6655eaaafa4",
+          "ref": "refs/heads/pla"
+        },
+        {
+          "commit": "212e37dd22a0e743c34f5ad1b8be5fc1de674461",
+          "ref": "refs/heads/refchips"
+        },
+        {
+          "commit": "d06bb56d68d2d023e5d4ee21e2d41f407c5688e4",
+          "ref": "refs/heads/search-results"
+        },
+        {
+          "commit": "d7fdeeecbeb0ce594f724802b261e90d36e2c747",
+          "ref": "refs/heads/speed"
+        },
+        {
+          "commit": "bd2b7b8413ef3bb175f60bc01240e5302da5659d",
+          "ref": "refs/heads/srepo"
+        },
+        {
+          "commit": "98e0b3806e096ebe0d61ff76a04076e682033ccb",
+          "ref": "refs/heads/states"
+        },
+        {
+          "commit": "30c933ee2e55aff1a2a8aaa92b73047ad58d75e7",
+          "ref": "refs/heads/ui"
+        },
+        {
+          "commit": "36a4eaa22ba8114437f64def5e28fb67d486e881",
+          "ref": "refs/heads/urls"
+        },
+        {
+          "commit": "9251b790faa65b78d80dbe4528fcdd3aefef1238",
+          "ref": "refs/heads/vps"
+        },
+        {
+          "commit": "153ab3d9ac3b370389f84ab5a3e9b5668adbd0de",
+          "ref": "refs/heads/xanalysis"
+        },
+        {
+          "commit": "6f5980e4939d63324a3e2e77e236b25b64c1ced7",
+          "ref": "refs/pull/1/head"
+        },
+        {
+          "commit": "3e06b2bfedfb47833e7706a2735f0fd392294461",
+          "ref": "refs/pull/10/head"
+        },
+        {
+          "commit": "ae8979338ba92d835aa7d850410fe6e28a22ce9d",
+          "ref": "refs/pull/11/head"
+        },
+        {
+          "commit": "29fa0e1e10af09d9b6d40d9fde43fee40b09791b",
+          "ref": "refs/pull/12/head"
+        },
+        {
+          "commit": "8c9eb0c8edc7cc27570f6e1f0a4f5933b24fb851",
+          "ref": "refs/pull/13/head"
+        },
+        {
+          "commit": "30c0ff875f4398f94bce2dad14d081c374224d6e",
+          "ref": "refs/pull/14/head"
+        },
+        {
+          "commit": "c75b75418c80d77099f6ccca8ef2112f38c147f8",
+          "ref": "refs/pull/15/head"
+        },
+        {
+          "commit": "befc7b4771cf22292e4ee34a87d12642b6171fd2",
+          "ref": "refs/pull/16/head"
+        },
+        {
+          "commit": "4a50ce0524178f129fb4849015241c5270c136fc",
+          "ref": "refs/pull/17/head"
+        },
+        {
+          "commit": "eaaa3a9353dfac3348853dd3dd6b9da89d12d472",
+          "ref": "refs/pull/18/head"
+        },
+        {
+          "commit": "bc3f121d414d83cffae230e6b33b836d4b466a75",
+          "ref": "refs/pull/19/head"
+        },
+        {
+          "commit": "d35ba7bb25548fe7aa49716f7641dd3f2f46d811",
+          "ref": "refs/pull/2/head"
+        },
+        {
+          "commit": "e6cf0cff7f029922c455b1b6c0442f953922a02c",
+          "ref": "refs/pull/20/head"
+        },
+        {
+          "commit": "8b6ab74634bb9d3e695285b423a362cac81fe522",
+          "ref": "refs/pull/21/head"
+        },
+        {
+          "commit": "27b8e2576482223df460e6eac49a69d80554ef1a",
+          "ref": "refs/pull/22/head"
+        },
+        {
+          "commit": "7d2a0e49c06537f5f2b2f731feaa35af669d76ee",
+          "ref": "refs/pull/23/head"
+        },
+        {
+          "commit": "c96df30d4965ef545ce90d36cae623448665f4b8",
+          "ref": "refs/pull/24/head"
+        },
+        {
+          "commit": "7a6ce28aaa54616fc4f28dc9a0703a25d8630706",
+          "ref": "refs/pull/25/head"
+        },
+        {
+          "commit": "9bb59f62812f5d1f327b83146f2da165ce694150",
+          "ref": "refs/pull/26/head"
+        },
+        {
+          "commit": "0b3226010029ee8eac27b2677d506030878aca2d",
+          "ref": "refs/pull/27/head"
+        },
+        {
+          "commit": "6df0fa8119220c88e8923e33f5b44908e312781a",
+          "ref": "refs/pull/28/head"
+        },
+        {
+          "commit": "fc6db48ddd98dd621975849e869410c6c24b85ca",
+          "ref": "refs/pull/29/head"
+        },
+        {
+          "commit": "6e497bcf2b51b99c848c483ec2162b809d058817",
+          "ref": "refs/pull/3/head"
+        },
+        {
+          "commit": "e77ded9a3969a65b001d2c87b3c851adf24921f8",
+          "ref": "refs/pull/30/head"
+        },
+        {
+          "commit": "7735a0224a754d766b7a9dfcacf2326974c5ce89",
+          "ref": "refs/pull/31/head"
+        },
+        {
+          "commit": "566d1b31b917ecf94442718cf313bb3e6f0d5736",
+          "ref": "refs/pull/32/head"
+        },
+        {
+          "commit": "086e05f89a24b0d972f5bd62d476527031ff6c7b",
+          "ref": "refs/pull/33/head"
+        },
+        {
+          "commit": "f069c91c90bb479b25b561a1b49956730a078ca3",
+          "ref": "refs/pull/34/head"
+        },
+        {
+          "commit": "fea243bcba341dfda4fb592222f485a6a7e8c9bc",
+          "ref": "refs/pull/34/merge"
+        },
+        {
+          "commit": "45b7a6de385d56a26d329231eaa9ddde476c00d7",
+          "ref": "refs/pull/35/head"
+        },
+        {
+          "commit": "4f642c55303b6272b46a31a01e16bc2754afcb97",
+          "ref": "refs/pull/37/head"
+        },
+        {
+          "commit": "d251c50b91e2aee4092b0321e9f1f16cf2645684",
+          "ref": "refs/pull/37/merge"
+        },
+        {
+          "commit": "386859ae05ac35ba12b5bea72f6ee58b78e34b7a",
+          "ref": "refs/pull/38/head"
+        },
+        {
+          "commit": "9b1b34ef179839267bdb6cdd930db3b5b8188d0b",
+          "ref": "refs/pull/39/head"
+        },
+        {
+          "commit": "a1aed557c300cd23e0a98f41aeda7869cb319f54",
+          "ref": "refs/pull/39/merge"
+        },
+        {
+          "commit": "445cb3ae4de9eb48661fd5ce388bb7c978c1f54a",
+          "ref": "refs/pull/4/head"
+        },
+        {
+          "commit": "b4015bc08bba5daf58281f94790a13d6ba3b5dbd",
+          "ref": "refs/pull/40/head"
+        },
+        {
+          "commit": "3a471635cee48e30d20d981848835e551d102fe2",
+          "ref": "refs/pull/41/head"
+        },
+        {
+          "commit": "bc39d6195d597591381a9d4c2cc7239c80517cd5",
+          "ref": "refs/pull/42/head"
+        },
+        {
+          "commit": "82ee05be755bd89c75c9508e55f5ddf5a65169d8",
+          "ref": "refs/pull/42/merge"
+        },
+        {
+          "commit": "9ea6b3d2783b6499fe4d1476373b8baa30589860",
+          "ref": "refs/pull/5/head"
+        },
+        {
+          "commit": "9eac9a2dc55e7b610eb1a5992bbc90d881404879",
+          "ref": "refs/pull/6/head"
+        },
+        {
+          "commit": "729a999806136a96232a7dc54c0bec3aa917366f",
+          "ref": "refs/pull/7/head"
+        },
+        {
+          "commit": "65b34e8fa9fdbd4cad9fe7b16c4c4f617aaf0006",
+          "ref": "refs/pull/8/head"
+        },
+        {
+          "commit": "f073de1a680dbf0c12d44e1ada242676cca4b00f",
+          "ref": "refs/pull/9/head"
+        },
+        {
+          "commit": "3084cb25f8b8ad75c096ff6549f4ef56f564e283",
+          "ref": "HEAD"
+        }
+      ],
+      "publication": "local_only"
+    },
+    {
+      "name": "soft",
+      "bundle_path": "tagapp-materials/repos/soft.bundle",
+      "size_bytes": 34501213,
+      "sha256": "f6eddfe81c8670357f5362611660e7cee55124b9a1013a9d2b35336fe2976de5",
+      "branch": "frontend",
+      "commit": "6693b812dc73fd7c66b47a1d894c8300a377e602",
+      "default_ref": "refs/heads/main",
+      "refs": [
+        {
+          "commit": "6693b812dc73fd7c66b47a1d894c8300a377e602",
+          "ref": "refs/heads/frontend"
+        },
+        {
+          "commit": "16baaa0bfb95a2711178222025abfd71bea17c3e",
+          "ref": "refs/heads/main"
+        },
+        {
+          "commit": "6693b812dc73fd7c66b47a1d894c8300a377e602",
+          "ref": "refs/heads/next"
+        },
+        {
+          "commit": "fec459824605f7cdd1d6c503db6d9787efd5ee8e",
+          "ref": "refs/pull/1/head"
+        },
+        {
+          "commit": "16baaa0bfb95a2711178222025abfd71bea17c3e",
+          "ref": "HEAD"
+        }
+      ],
+      "publication": "local_only"
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "milestone": 1,
+  "status": "in_progress",
+  "observed_on": "2026-09-29",
+  "gates": [
+    {
+      "id": "intake",
+      "status": "passed",
+      "evidence": "docs/intake-assessment.md; docs/qualification/repository-pins.json"
+    },
+    {
+      "id": "publication-boundary",
+      "status": "passed",
+      "evidence": "Publication guard unit tests and local index/worktree checks; bounded protection, not complete security clearance"
+    },
+    {
+      "id": "profile-examples",
+      "status": "partial",
+      "evidence": "22 candidate rows and 66 case specifications; principal local GT FY26 fixture registered (108 pages); 16-page synthetic fixture retained for focused regression; complete profile fixtures remain unqualified"
+    },
+    {
+      "id": "regulatory-pins",
+      "status": "partial",
+      "evidence": "CH documents and FRC 2026 archive pinned; three FRC entry points passed offline loading; envelope schema/conformance-suite pins remain"
+    },
+    {
+      "id": "converter-feasibility",
+      "status": "partial",
+      "evidence": "Replacement built from pinned sources with OpenJPEG and LCMS2; both synthetic codecs pass. All 108 pages and 3,467 numeric occurrences preserved in 73.465 seconds. First-page unmatched source ink improved from 95.86% to 0.11%. 18-page visual sample measured; manual review pending. 16 hyphen substitutions remain. The 28 near-edge drag mismatches are isolated: fixed interior-glyph coordinates pass 238/238 without report changes; independent public geometry control passes 8/8. Application selection/accessibility remain future work; see selection-decision.md. See sourcebuild-* evidence and converter-decision.md. Punctuation cause isolated: ignored ActualText U+2011 replacements (normalised as U+2010). Five synthetic controls reproduce the distinction; 16 occurrences have 8 unique/4 ambiguous word-group locators, all unapproved. Raw hyphen semantics are now checked. See punctuation-decision.md."
+    },
+    {
+      "id": "processor-feasibility",
+      "status": "partial",
+      "evidence": "docs/qualification/processor-result.json and taxonomy-result.json; synthetic and FRC offline probes passed; independent comparison outstanding"
+    },
+    {
+      "id": "licence-review",
+      "status": "partial",
+      "evidence": "docs/qualification/licences.md; dependency metadata captured, distribution review outstanding"
+    },
+    {
+      "id": "external-dependencies",
+      "status": "passed",
+      "evidence": "User confirms CH test account available; RaptorXML access outstanding; see docs/compliance/test-account.md"
+    }
+  ]
+}

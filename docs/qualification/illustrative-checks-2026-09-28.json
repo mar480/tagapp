@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-28",
+  "scope": "Grant Thornton local fixture adoption and conversion diagnostics",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests/baseline -q",
+      "exit_code": 0,
+      "tests": 41
+    },
+    {
+      "command": "python3 -m tools.baseline.check --local-materials",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard --worktree",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python3 -m tools.baseline.illustrative_probe --analyse-existing",
+      "exit_code": 1,
+      "status": "review_required"
+    },
+    {
+      "command": "python3 -m tools.baseline.illustrative_probe --tounicode force --analyse-existing",
+      "exit_code": 1,
+      "status": "review_required"
+    }
+  ],
+  "publication_boundary": "git check-ignore confirmed original PDF, raw converted HTML and private difference file are ignored; no staging, commit or push performed",
+  "source_hashes": {
+    "tools/baseline/illustrative_probe.py": "3a5f3030661ad16461d3a3810ee0c3db7dcb7a7a93e1b35e86f028a85ae187c2",
+    "tests/baseline/test_illustrative_probe.py": "9eac3f109089912a9894306db8f59a1ecdad7e6d9a802f04d07c7d47240f8a05",
+    "docs/qualification/fixture-registry.json": "7e08f8315c104366cd58a237eb9062dbe407227cf0c7bdf8b5bd052d4e2a3f65",
+    "docs/qualification/illustrative-conversion-result.json": "21b5961aabe4f9125232b43d3134718065d6be87bb4b8777288bddf6003ce70f"
+  },
+  "milestone_complete": false
+}

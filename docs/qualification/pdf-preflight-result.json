@@ -1,0 +1,19 @@
+{
+  "status": "converter_incompatible",
+  "image_streams_by_encoding": {
+    "jpx": 20,
+    "image": 4
+  },
+  "findings": [
+    {
+      "code": "converter.jpeg2000_unsupported",
+      "severity": "blocking",
+      "affected_image_streams": 20,
+      "explanation": "This pinned converter was built without OpenJPEG and loses JPEG2000 image content. A different qualified build is required; changing PNG/SVG output does not fix decoding."
+    }
+  ],
+  "production_qualified": false,
+  "schema_version": 1,
+  "source_sha256": "f8ada8df24f31c6dc1d251169e9586617d73b7fc21a83b60290e7f3b76f77b9b",
+  "converter_sha256": "11de2583a3abce5f141fd7fafb1fea2c67b15886e546d6b7675c600012e6ab8c"
+}

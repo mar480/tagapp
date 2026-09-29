@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "processor": "arelle-release",
+  "version": "2.44.1",
+  "scope": "synthetic iXBRL/core XBRL only",
+  "network": "unshare --net and offline cache",
+  "frc_qualified": false,
+  "companies_house_qualified": false,
+  "cases": [
+    {
+      "id": "valid",
+      "status": "pass",
+      "exit_code": 0,
+      "findings": [
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        }
+      ]
+    },
+    {
+      "id": "invalid-value",
+      "status": "pass",
+      "exit_code": 3,
+      "findings": [
+        {
+          "code": "xmlSchema:valueError",
+          "level": "error"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        },
+        {
+          "code": "info",
+          "level": "info"
+        }
+      ]
+    }
+  ],
+  "observed_on": "2026-09-28"
+}
