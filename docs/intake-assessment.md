@@ -304,6 +304,13 @@ default journeys. See [sources.json](compliance/sources.json).
 
 ## 14. Gaps
 
+> Superseding decision — 29 September 2026: the user removed mandatory
+> RaptorXML acquisition and independent-processor acceptance gates. References
+> below to outstanding processor access or independent-validation tooling record
+> the earlier assessment; they no longer impose a prerequisite or a question for
+> the user. Independent processor comparison is optional and vendor-neutral.
+> Historical findings and test results are preserved.
+
 Complete taxonomy/schema/dependency closure; qualified converter build and font/
 Unicode corpus; principal synthetic accounts and profile fixtures; statutory
 eligibility matrix; full distribution licence review; independent processor access;

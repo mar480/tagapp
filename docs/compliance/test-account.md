@@ -8,7 +8,6 @@ requested, stored, tested or used by the baseline probes.
 |---|---|---|
 | CH test presenter account | User-confirmed; connectivity untested | Configure through private secret storage at the test-filing milestone |
 | CH profile testing | Not started | Agree cases and submit authorised synthetic examples; retain final outcomes |
-| RaptorXML+XBRL | No local executable/licence available | Obtain local evaluation/licensed access and pin it before independent validation |
 | Official FRC 2026 package | Published download identified | Acquire, hash and test offline closure |
 | Production access/authority | Not established | Separate setup and explicit per-filing authorisation |
 
@@ -17,6 +16,8 @@ requires unique envelope numbers and status polling. Applicable test attachments
 can remain pending for manual review. Account availability is not testing completion.
 No messages are sent to Companies House without explicit instruction.
 
-The independent processor is a test dependency, not a bundled runtime. Do not
-substitute a third-party report-validation service for local validation without
-changing the confidentiality agreement.
+Independent processor comparison is optional and vendor-neutral. No second
+processor or licence is required for development, export or release. If selected
+later, its version and comparison evidence should be recorded. Do not substitute
+a third-party report-validation service for local validation without changing the
+confidentiality agreement.

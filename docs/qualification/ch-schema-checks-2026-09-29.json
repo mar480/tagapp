@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-29",
+  "scope": "Pinned official transport schemas and offline synthetic validation",
+  "checks": [
+    {
+      "command": "python3 -m tools.baseline.ch_schemas",
+      "exit_code": 0,
+      "verified_files": 12
+    },
+    {
+      "command": "/home/robert-marks/.pyenv/versions/3.12.8/bin/python -m tools.baseline.ch_schema_probe",
+      "exit_code": 0,
+      "compiled_roots": 4,
+      "cases": 30,
+      "expectations_met": 30
+    },
+    {
+      "command": "python3 -m unittest discover -s tests/baseline -q",
+      "exit_code": 0,
+      "tests": 67
+    },
+    {
+      "command": "python3 -m tools.baseline.check --local-materials",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard --worktree",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard",
+      "exit_code": 0
+    }
+  ],
+  "source_hashes": {
+    "tools/baseline/ch_schemas.py": "79df565a4d7736afbb3bf39e76170f2b8c003b83074e256dbfac3d7b7792b542",
+    "tools/baseline/ch_schema_probe.py": "2d17e6848bb5a073e65415b7af1a7cda0009adf0b206d486ad200cd9736b82f8",
+    "tests/baseline/test_ch_schemas.py": "68b9b26180ccc96f785ed4e5c477d339b3d1276a836a9a1a7023f8947b0e9a4f",
+    "docs/compliance/ch-schema-pins.json": "acbc7dda7643e3d911ff7650fed8234b150d23c658010230c6a68b136b3a2372"
+  },
+  "milestone_complete": false,
+  "production_qualified": false,
+  "submission_attempted": false,
+  "next_work": "XBRL specification/conformance-suite pins and exact profile eligibility evidence; no need to repeat converter investigations."
+}

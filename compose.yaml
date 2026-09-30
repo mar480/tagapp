@@ -1,0 +1,96 @@
+# Local integration only: loopback TLS, no host database or broker ports.
+name: tagger-foundation
+x-application: &application
+  build:
+    context: .
+    dockerfile: deploy/api.Dockerfile
+  environment: &environment
+    TAGGER_SECRET_KEY: ${TAGGER_SECRET_KEY:?Generate a private environment file first}
+    TAGGER_ALLOWED_HOSTS: localhost,127.0.0.1,api
+    TAGGER_CSRF_ORIGINS: https://localhost:8443
+    POSTGRES_HOST: db
+    POSTGRES_DB: tagger
+    POSTGRES_USER: tagger
+    POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Generate a private environment file first}
+    TAGGER_BROKER_URL: amqp://tagger:${RABBITMQ_PASSWORD:?Generate a private environment file first}@broker:5672//
+    TAGGER_BLOB_ROOT: /data/blobs
+    TAGGER_STATIC_ROOT: /data/static
+  networks: [private]
+  read_only: true
+  tmpfs: [/tmp:size=128m,mode=1777]
+  security_opt: [no-new-privileges:true]
+  cap_drop: [ALL]
+  volumes:
+    - blobs:/data/blobs
+    - static:/data/static
+services:
+  db:
+    image: postgres:17-bookworm@sha256:639ab7ceb90e13123085b741fb31ef493fba25463002f6da665352e7b534b652
+    environment:
+      POSTGRES_DB: tagger
+      POSTGRES_USER: tagger
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Generate a private environment file first}
+    networks: [private]
+    volumes: [database:/var/lib/postgresql/data]
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U tagger -d tagger']
+      interval: 5s
+      timeout: 3s
+      retries: 20
+  broker:
+    image: rabbitmq:4.2-alpine@sha256:920aeef84def9973d06c8334f71914d8a71dba1e8b38a7b0ff126a3da8e3d3ef
+    environment:
+      RABBITMQ_DEFAULT_USER: tagger
+      RABBITMQ_DEFAULT_PASS: ${RABBITMQ_PASSWORD:?Generate a private environment file first}
+    networks: [private]
+    volumes: [broker:/var/lib/rabbitmq]
+    healthcheck:
+      test: [CMD, rabbitmq-diagnostics, -q, ping]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+  migrate:
+    <<: *application
+    command: [sh, -c, 'python manage.py migrate --noinput && python manage.py collectstatic --noinput']
+    depends_on:
+      db: {condition: service_healthy}
+  api:
+    <<: *application
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/', timeout=3)"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+  worker:
+    <<: *application
+    command: [celery, -A, config, worker, --loglevel=WARNING, --concurrency=1, --hostname=foundation@%h]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      broker: {condition: service_healthy}
+  dispatcher:
+    <<: *application
+    command: [python, manage.py, dispatch_jobs]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      broker: {condition: service_healthy}
+  web:
+    build:
+      context: .
+      dockerfile: deploy/web.Dockerfile
+    ports: ['127.0.0.1:8443:8443']
+    networks: [private]
+    volumes: [static:/data/static:ro, caddy_data:/data, caddy_config:/config]
+    depends_on:
+      api: {condition: service_healthy}
+networks:
+  private:
+    internal: true
+volumes:
+  database:
+  broker:
+  blobs:
+  static:
+  caddy_data:
+  caddy_config:

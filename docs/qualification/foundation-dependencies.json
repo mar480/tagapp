@@ -1,0 +1,588 @@
+{
+  "observed_on": "2026-09-30",
+  "scope": "Declared installed/lock metadata, not full notice or redistribution review",
+  "python": [
+    {
+      "name": "amqp",
+      "version": "5.4.0",
+      "declared_licence": "BSD License"
+    },
+    {
+      "name": "asgiref",
+      "version": "3.12.1",
+      "declared_licence": "BSD License"
+    },
+    {
+      "name": "attrs",
+      "version": "26.1.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "name": "billiard",
+      "version": "4.3.0",
+      "declared_licence": "BSD License"
+    },
+    {
+      "name": "celery",
+      "version": "5.6.3",
+      "declared_licence": "BSD-3-Clause"
+    },
+    {
+      "name": "click",
+      "version": "8.5.0",
+      "declared_licence": "BSD-3-Clause"
+    },
+    {
+      "name": "click-didyoumean",
+      "version": "0.3.1",
+      "declared_licence": "MIT License"
+    },
+    {
+      "name": "click-plugins",
+      "version": "1.1.1.2",
+      "declared_licence": "BSD License"
+    },
+    {
+      "name": "click-repl",
+      "version": "0.4.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "name": "Django",
+      "version": "5.2.17",
+      "declared_licence": "BSD-3-Clause"
+    },
+    {
+      "name": "djangorestframework",
+      "version": "3.18.1",
+      "declared_licence": "BSD-3-Clause"
+    },
+    {
+      "name": "drf-spectacular",
+      "version": "0.30.0",
+      "declared_licence": "BSD-3-Clause"
+    },
+    {
+      "name": "gunicorn",
+      "version": "26.2.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "name": "inflection",
+      "version": "0.5.1",
+      "declared_licence": "MIT License"
+    },
+    {
+      "name": "jsonschema",
+      "version": "4.26.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "name": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "declared_licence": "MIT"
+    },
+    {
+      "name": "kombu",
+      "version": "5.6.2",
+      "declared_licence": "BSD-3-Clause"
+    },
+    {
+      "name": "packaging",
+      "version": "26.3",
+      "declared_licence": "Apache-2.0 OR BSD-2-Clause"
+    },
+    {
+      "name": "prompt_toolkit",
+      "version": "3.0.53",
+      "declared_licence": "BSD License"
+    },
+    {
+      "name": "psycopg-binary",
+      "version": "3.3.6",
+      "declared_licence": "LGPL-3.0-only"
+    },
+    {
+      "name": "python-dateutil",
+      "version": "2.9.0.post0",
+      "declared_licence": "BSD License; Apache Software License"
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "declared_licence": "MIT License"
+    },
+    {
+      "name": "referencing",
+      "version": "0.37.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "name": "rpds-py",
+      "version": "2026.6.3",
+      "declared_licence": "MIT"
+    },
+    {
+      "name": "six",
+      "version": "1.17.0",
+      "declared_licence": "MIT License"
+    },
+    {
+      "name": "sqlparse",
+      "version": "0.6.0",
+      "declared_licence": "BSD License"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.16.0",
+      "declared_licence": "PSF-2.0"
+    },
+    {
+      "name": "tzdata",
+      "version": "2026.4",
+      "declared_licence": "Apache-2.0"
+    },
+    {
+      "name": "tzlocal",
+      "version": "5.4.4",
+      "declared_licence": "MIT"
+    },
+    {
+      "name": "uritemplate",
+      "version": "4.2.0",
+      "declared_licence": "BSD 3-Clause OR Apache-2.0"
+    },
+    {
+      "name": "vine",
+      "version": "5.1.0",
+      "declared_licence": "BSD License"
+    },
+    {
+      "name": "wcwidth",
+      "version": "0.9.1",
+      "declared_licence": "MIT License"
+    }
+  ],
+  "node": [
+    {
+      "path": "node_modules/@babel/code-frame",
+      "version": "7.29.7",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@babel/helper-validator-identifier",
+      "version": "7.29.7",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@oxc-project/types",
+      "version": "0.151.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@playwright/test",
+      "version": "1.63.0",
+      "declared_licence": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/@redocly/ajv",
+      "version": "8.11.2",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@redocly/config",
+      "version": "0.22.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@redocly/openapi-core",
+      "version": "1.34.20",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-android-arm-eabi",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-android-arm64",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-darwin-arm64",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-darwin-x64",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-freebsd-x64",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-linux-arm-gnueabihf",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-linux-arm64-gnu",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-linux-arm64-musl",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-linux-ppc64-gnu",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-linux-s390x-gnu",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-linux-x64-gnu",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-linux-x64-musl",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-openharmony-arm64",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-win32-arm64-msvc",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/binding-win32-x64-msvc",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@rolldown/pluginutils",
+      "version": "1.0.1",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@types/node",
+      "version": "26.6.3",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@types/react",
+      "version": "19.3.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@types/react-dom",
+      "version": "19.3.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/@vitejs/plugin-react",
+      "version": "6.1.1",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/agent-base",
+      "version": "7.1.4",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/ansi-colors",
+      "version": "4.1.3",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/argparse",
+      "version": "2.0.1",
+      "declared_licence": "Python-2.0"
+    },
+    {
+      "path": "node_modules/balanced-match",
+      "version": "1.0.2",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/brace-expansion",
+      "version": "2.1.7",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/change-case",
+      "version": "5.4.4",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/colorette",
+      "version": "1.4.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/csstype",
+      "version": "3.2.3",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/debug",
+      "version": "4.4.3",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/detect-libc",
+      "version": "2.1.2",
+      "declared_licence": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/fast-deep-equal",
+      "version": "3.1.3",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/fdir",
+      "version": "6.5.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/fsevents",
+      "version": "2.3.3",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/https-proxy-agent",
+      "version": "7.0.6",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/index-to-position",
+      "version": "1.2.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/js-levenshtein",
+      "version": "1.1.6",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/js-tokens",
+      "version": "4.0.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/js-yaml",
+      "version": "4.3.2",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/json-schema-traverse",
+      "version": "1.0.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/lightningcss",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-android-arm64",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-darwin-arm64",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-darwin-x64",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-freebsd-x64",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-linux-arm-gnueabihf",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-linux-arm64-gnu",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-linux-arm64-musl",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-linux-x64-gnu",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-linux-x64-musl",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-win32-arm64-msvc",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/lightningcss-win32-x64-msvc",
+      "version": "1.33.0",
+      "declared_licence": "MPL-2.0"
+    },
+    {
+      "path": "node_modules/minimatch",
+      "version": "5.1.9",
+      "declared_licence": "ISC"
+    },
+    {
+      "path": "node_modules/ms",
+      "version": "2.1.3",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/nanoid",
+      "version": "3.3.19",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/openapi-typescript",
+      "version": "7.13.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/parse-json",
+      "version": "8.3.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/picocolors",
+      "version": "1.1.1",
+      "declared_licence": "ISC"
+    },
+    {
+      "path": "node_modules/picomatch",
+      "version": "4.0.7",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/playwright",
+      "version": "1.63.0",
+      "declared_licence": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/playwright-core",
+      "version": "1.63.0",
+      "declared_licence": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/pluralize",
+      "version": "8.0.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/postcss",
+      "version": "8.5.28",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/react",
+      "version": "19.3.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/react-dom",
+      "version": "19.3.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/require-from-string",
+      "version": "2.0.2",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/rolldown",
+      "version": "1.2.11",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/scheduler",
+      "version": "0.28.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/source-map-js",
+      "version": "1.2.1",
+      "declared_licence": "BSD-3-Clause"
+    },
+    {
+      "path": "node_modules/supports-color",
+      "version": "10.2.2",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/tinyglobby",
+      "version": "0.2.17",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/type-fest",
+      "version": "4.41.0",
+      "declared_licence": "(MIT OR CC0-1.0)"
+    },
+    {
+      "path": "node_modules/typescript",
+      "version": "5.9.3",
+      "declared_licence": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/undici-types",
+      "version": "8.9.0",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/uri-js-replace",
+      "version": "1.0.1",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/vite",
+      "version": "8.3.1",
+      "declared_licence": "MIT"
+    },
+    {
+      "path": "node_modules/yaml-ast-parser",
+      "version": "0.0.43",
+      "declared_licence": "Apache-2.0"
+    },
+    {
+      "path": "node_modules/yargs-parser",
+      "version": "21.1.1",
+      "declared_licence": "ISC"
+    }
+  ]
+}

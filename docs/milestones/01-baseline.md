@@ -1,7 +1,8 @@
 # Milestone 1 — baseline and qualification
 
-Status: **in progress**. This is the first implementation milestone; the application
-foundation and tagging UI have not started. Gate status is machine-readable in
+Status: **foundation ready; full qualification in progress**. Step 2 has started;
+the tagging UI has not. See the [foundation decision](../decisions/0001-foundation-boundary.md)
+for the explicit reassignment of outstanding qualification. Gate status is machine-readable in
 [01-status.json](01-status.json). The accepted scope is unchanged; the user has replaced the principal local
 fixture with Grant Thornton's FY26 illustrative accounts.
 
@@ -42,20 +43,34 @@ fixture with Grant Thornton's FY26 illustrative accounts.
   groups (eight unique, four ambiguous); no repair applied. Raw codepoint checks
   now prevent NFKC hiding loss of non-breaking semantics. See
   [the punctuation decision](../qualification/punctuation-decision.md).
+- Twelve official CH transport schemas pinned with complete selected dependency
+  closure; four roots compile offline and thirty synthetic checks pass expectations.
+  [Schema findings](../compliance/schema-baseline.md) record GatewayTest lexical
+  constraints, lax envelope validation and local base64-validator limits.
+- Official core, dimensions and Inline specification/suite bytes pinned. Core
+  passes 606/606 and dimensions 347/347 offline in Arelle 2.44.1. Inline uses
+  bounded groups and a pinned upstream comparison adapter: 419/419 cases accounted
+  for, 418 passes and one upstream-documented expectation mismatch retained. See
+  [conformance evidence](../qualification/conformance-result.json) and
+  [comparison limits](../compliance/conformance-baseline.md).
 - Public CI definition and licence/dependency review records.
 - CH test presenter account availability confirmed by the user. No credentials
   have been stored, no messages sent and no filing attempted.
 
-## Work still needed before the baseline gate closes
+## Qualification work retained and assigned to later milestones
 
 | ID | Work | Required evidence |
 |---|---|---|
 | B1 | Finish exact profile applicability | Effective-date/legal references, entity/framework exceptions and explicit unsupported combinations |
 | B2 | Materialise profile examples | Use the 108-page local illustrative report for PoC; create reviewed public synthetic accounts and companion profile/negative fixtures; case specifications alone are insufficient |
-| B3 | Complete normative asset pins | CH envelope schemas, XBRL conformance-suite versions and dependency/processor provenance |
+| B3 | Complete normative asset pins | CH transport closure and core/dimensions/Inline specification/suite pins completed; transformation-registry/profile selection, later-errata coverage and packaged processor provenance remain |
 | B4 | Expand converter qualification | Replacement build and codec gate passed. Selection boundary sensitivity isolated; preserve explicit application selection/anchor gates. ActualText cause isolated and repair candidates recorded; reviewed repairs remain a conversion requirement. Complete visual review and remaining corpus/build obligations |
 | B5 | Complete distribution review | Exact component/resource notices, FRC package terms and converter corresponding-source obligations |
-| B6 | Independent processor qualification | Local RaptorXML+XBRL evaluation/licence, pinned harness and comparison evidence; unavailable tooling remains explicit |
+
+Decision update — 29 September 2026: the user removed mandatory RaptorXML
+qualification. B6 has been removed; independent processor comparison is optional
+and vendor-neutral, with no development, export or release gate. B1–B5 and all
+other unresolved qualification requirements remain in force.
 
 Cake browser screenshots and interaction parity tests belong to its extraction
 milestone; the current static checklist must not be reported as completed visual
@@ -81,6 +96,8 @@ existing-source mutation is part of this milestone.
 
 ## Next dependency
 
-Complete B1–B6 and record their evidence, then begin the foundation: Django/DRF,
-React/Vite, PostgreSQL, private storage, durable jobs, accounts and project access.
+The user authorised starting the foundation with B1–B5 assigned to the milestones
+listed in the [decision](../decisions/0001-foundation-boundary.md). None of those
+requirements is waived. Follow [Step 2](02-foundation.md) for implementation and
+actual verification evidence.
 Do not require the user to test a tagging UI before that UI exists.

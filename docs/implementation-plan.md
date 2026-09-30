@@ -308,14 +308,14 @@ Work through these milestones in order. Each produces a demonstrable result and 
 
 | Step | Work | Completion gate |
 |---|---|---|
-| **1. Baseline and qualification** | Record the intake findings; protect local materials from publication; create the company/LLP filing-profile matrix; pin regulatory sources; inventory licences; qualify conversion and independent-validation tooling. | Every supported profile has source references and positive/negative examples. Converter feasibility, redistribution obligations and remaining external dependencies are documented. |
+| **1. Baseline and qualification** | Record the intake findings; protect local materials from publication; create the company/LLP filing-profile matrix; pin regulatory sources; inventory licences; qualify conversion and Arelle validation tooling. | Candidate profiles have source references and positive/negative case specifications. Feasibility evidence, redistribution obligations and external dependencies are documented. Full qualification is explicitly assigned to its owning milestones in [the foundation decision](decisions/0001-foundation-boundary.md); no profile is thereby qualified. |
 | **2. Application foundation** | Establish the modular repository, CI, API contracts, database migrations, accounts, project permissions, private storage and durable jobs. | A user can create and reopen a private project; another unauthorised user cannot access its data; migrations and restore procedures work. |
 | **3. Domain and revisions** | Implement documents, anchors, facts, contexts, units, command processing, revisions and audit records. | Domain tests cover exact numeric values, dimensions, undo, stale edits and operation deduplication. Revision snapshots reproduce their state. |
 | **4. Cake integration** | Extract the explorer and visual mappings; implement package/entry-point queries and replace global active-taxonomy state. | The Cake parity checklist passes. Two projects using different taxonomies cannot contaminate each other’s results. Complete packages load without runtime internet access. |
 | **5. PDF conversion** | Implement upload, pdf2htmlEX processing, XHTML normalisation, diagnostics, comparison and repair. | The conversion corpus has no unexplained missing or changed financial text. Selected text agrees with the visible rendition. Repairs preserve traceability. |
 | **6. Manual free tagging** | Implement selection, drag/drop, click and keyboard application, fact inspection, dimensions, bulk table tagging and undo. | A substantial report can be tagged end to end through each interaction method. All tag edits survive reload and retain valid anchors. |
 | **7. Validation** | Integrate structured Arelle results, datatype/context checks and versioned Companies House rules. | Deliberately invalid fixtures fail for the expected reasons; unavailable checks are shown honestly; findings navigate to the relevant content. |
-| **8. Deterministic export** | Generate complete iXBRL, validate the output, compare extracted facts and build export evidence manifests. | Repeat generation is byte-stable; intended and extracted facts match; qualified fixtures pass conformance and independent-processor checks. |
+| **8. Deterministic export** | Generate complete iXBRL, validate the output, compare extracted facts and build export evidence manifests. | Repeat generation is byte-stable; intended and extracted facts match; qualified fixtures pass applicable conformance checks. |
 | **9. Review and approval** | Add comments, issue resolution, visual/fact review, export approval and permission checks. | Approval identifies exact bytes; changes invalidate eligibility for filing; explicit self-approval is auditable. |
 | **10. Rules and coverage** | Adapt Soft’s useful workflow ideas into the declarative rule engine, editor, tests and published packs. | Rules execute reproducibly; invalid or unbounded rules are rejected; advisory coverage results remain separate from filing validity. |
 | **11. Local generative assistance** | Add retrieval, chat, tag/rule proposals, evidence presentation, acceptance and provenance. | The evaluation corpus meets the agreed quality threshold; fabricated concept identifiers are rejected; prompts cannot initiate actions; report processing produces no external inference traffic. |
@@ -358,9 +358,9 @@ Include different PDF producers, embedded/subset fonts, ligatures, rotated text 
 | AI | Unsupported concepts, misleading explanations, prompt injection, unavailable models and human rejection |
 | Accessibility | Complete keyboard and click-only workflows, focus recovery, zoom, contrast and screen-reader navigation |
 
-Use Arelle plus the applicable XBRL conformance suites. For independent processor comparison, plan a separate, locally operated RaptorXML+XBRL test harness; licensing/access is a release-assurance dependency, not a bundled runtime requirement. Its independently listed coverage includes Inline XBRL 1.1. [XBRL International processor listing](https://software.xbrl.org/processor/altova-raptorxml-xbrl-server)
+Use Arelle plus the applicable XBRL conformance suites. Arelle validation, conformance testing, generated-fact comparison and Companies House testing remain required. Independent processor comparison is an optional, vendor-neutral assurance activity; no second processor or licence is a development, export or release prerequisite.
 
-A second processor and successful Companies House tests provide evidence; neither automatically certifies this application.
+Successful Companies House tests and any optional second-processor comparison provide evidence; they do not automatically certify this application.
 
 ### Security and operational defaults
 

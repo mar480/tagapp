@@ -2,7 +2,7 @@
   "schema_version": 1,
   "milestone": 1,
   "status": "in_progress",
-  "observed_on": "2026-09-29",
+  "observed_on": "2026-09-30",
   "gates": [
     {
       "id": "intake",
@@ -22,7 +22,7 @@
     {
       "id": "regulatory-pins",
       "status": "partial",
-      "evidence": "CH documents and FRC 2026 archive pinned; three FRC entry points passed offline loading; envelope schema/conformance-suite pins remain"
+      "evidence": "CH documents and FRC 2026 archive pinned; three FRC entry points loaded offline. Twelve CH transport XSDs pinned, four roots compile offline and thirty synthetic checks pass expectations. Core/dimensions/Inline specification and suite bytes pinned in xbrl-conformance-pins.json. Transformation-registry/profile selection, Inline 2026 errata coverage and gateway prose conflict remain."
     },
     {
       "id": "converter-feasibility",
@@ -32,7 +32,7 @@
     {
       "id": "processor-feasibility",
       "status": "partial",
-      "evidence": "docs/qualification/processor-result.json and taxonomy-result.json; synthetic and FRC offline probes passed; independent comparison outstanding"
+      "evidence": "Synthetic and FRC offline probes passed. Arelle 2.44.1: core 606/606 and dimensions 347/347 pass; grouped Inline accounts for 419/419, with 418 passes and one upstream-documented base-URI expectation mismatch retained. Pinned test-only comparison adapter and limits in conformance-baseline.md; evidence in conformance-result.json. Later-errata coverage remains outstanding. Independent processor comparison is optional and is not a qualification prerequisite."
     },
     {
       "id": "licence-review",
@@ -42,7 +42,53 @@
     {
       "id": "external-dependencies",
       "status": "passed",
-      "evidence": "User confirms CH test account available; RaptorXML access outstanding; see docs/compliance/test-account.md"
+      "evidence": "User confirms CH test account available; no second-processor licence or access is required; see docs/compliance/test-account.md"
     }
-  ]
+  ],
+  "foundation_readiness": {
+    "status": "ready",
+    "decision": "docs/decisions/0001-foundation-boundary.md",
+    "deferred_gates": {
+      "profile-examples": {
+        "milestones": [
+          4,
+          5,
+          6,
+          7,
+          8,
+          13
+        ],
+        "blocks": "Relevant milestone acceptance and profile qualification"
+      },
+      "regulatory-pins": {
+        "milestones": [
+          4,
+          7,
+          8,
+          13
+        ],
+        "blocks": "Taxonomy, export and transport qualification"
+      },
+      "converter-feasibility": {
+        "milestones": [
+          5,
+          6
+        ],
+        "blocks": "Accepted conversion and dependable tagging"
+      },
+      "processor-feasibility": {
+        "milestones": [
+          7,
+          8
+        ],
+        "blocks": "Validation and export qualification"
+      },
+      "licence-review": {
+        "milestones": [
+          14
+        ],
+        "blocks": "Distribution of affected artefacts, including any earlier distribution"
+      }
+    }
+  }
 }

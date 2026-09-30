@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-29",
+  "checks": [
+    {
+      "command": "python3 -m unittest discover -s tests/baseline -q",
+      "exit_code": 0,
+      "tests": 77,
+      "result": "passed"
+    },
+    {
+      "command": "python3 -m tools.baseline.check --local-materials",
+      "exit_code": 0,
+      "result": "passed"
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard --worktree",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "python3 -m tools.baseline.publication_guard",
+      "exit_code": 0,
+      "findings": []
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0
+    },
+    {
+      "command": "python3 -m tools.baseline.conformance --summarize-inline",
+      "exit_code": 1,
+      "result": "review_required",
+      "reason": "All 419 variations accounted; one upstream-documented additional diagnostic retained without override"
+    }
+  ],
+  "file_sha256": {
+    "tools/baseline/conformance.py": "c83cdb05e3b53711a39e1399ea0772addd98e7c2ffcb973283a2533ba8bc9670",
+    "tests/baseline/test_conformance.py": "cdc2cffe9273c45713f1d73c96ea5e04364db9b84715a24e811248700afabe0d",
+    "docs/compliance/xbrl-conformance-pins.json": "9c5c346b033d7f518f4709faf900c7401729763f49ec1858465d996cbcc42340",
+    "docs/qualification/conformance-result.json": "67ac6b9ba172d7167ff8ee64700d2c5e36bfd94343052fcbb8bb8cd8b03f0391"
+  },
+  "milestone_qualified": false,
+  "production_qualified": false
+}

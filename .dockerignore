@@ -1,0 +1,24 @@
+# Allow-list the build context: supplied reports and local state never enter it.
+**
+!apps/
+!apps/api/
+!apps/api/**
+!apps/web/
+!apps/web/**
+!docs/
+!docs/api/
+!docs/api/openapi.yaml
+!deploy/
+!deploy/**
+!LICENSE
+!tools/
+!tools/foundation/
+!tools/foundation/**
+**/node_modules
+**/__pycache__
+**/*.pyc
+**/dist
+**/test-results
+**/playwright-report
+**/.env
+**/*.sqlite3

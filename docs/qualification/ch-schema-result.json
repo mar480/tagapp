@@ -1,0 +1,343 @@
+{
+  "schema_version": 1,
+  "status": "schema_checks_pass",
+  "scope": "Synthetic XSD transport validation only; no valid accounts or authenticated submission",
+  "network": "OS network namespace disabled; pinned local resolver; no_network parser",
+  "pin_sha256": "acbc7dda7643e3d911ff7650fed8234b150d23c658010230c6a68b136b3a2372",
+  "compiled_roots": 4,
+  "verified_files": 12,
+  "lxml_version": [
+    6,
+    1,
+    1,
+    0
+  ],
+  "libxml_version": [
+    2,
+    14,
+    6
+  ],
+  "validator_binary_sha256": "d7597a0fec22576416028238ff20a65f90d97ab6f96f65fe3a620780855add48",
+  "cases": [
+    {
+      "case": "gateway-1",
+      "schema": "envelope",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "gateway-0",
+      "schema": "envelope",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "gateway-2",
+      "schema": "envelope",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "gateway-true",
+      "schema": "envelope",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": [
+        "SCHEMAV_CVC_DATATYPE_VALID_1_2_1"
+      ]
+    },
+    {
+      "case": "gateway-false",
+      "schema": "envelope",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": [
+        "SCHEMAV_CVC_DATATYPE_VALID_1_2_1"
+      ]
+    },
+    {
+      "case": "wrapper-synthetic-bytes",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "wrapper-short-number",
+      "schema": "submission",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": [
+        "SCHEMAV_CVC_MINLENGTH_VALID"
+      ]
+    },
+    {
+      "case": "wrapper-invalid-alphabet-libxml",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": false,
+      "expected_strict_base64_valid": false,
+      "codes": []
+    },
+    {
+      "case": "wrapper-truncated-base64",
+      "schema": "submission",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": false,
+      "expected_strict_base64_valid": false,
+      "codes": [
+        "SCHEMAV_CVC_DATATYPE_VALID_1_2_1"
+      ]
+    },
+    {
+      "case": "wrapper-missing-date",
+      "schema": "submission",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": [
+        "SCHEMAV_ELEMENT_CONTENT"
+      ]
+    },
+    {
+      "case": "wrapper-wrong-namespace",
+      "schema": "submission",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": [
+        "SCHEMAV_CVC_ELT_1"
+      ]
+    },
+    {
+      "case": "envelope-lax-invalid-wrapper",
+      "schema": "envelope",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "envelope-lax-unknown-body",
+      "schema": "envelope",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "company-type-EW",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "company-type-SC",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "company-type-NI",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "company-type-R",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "company-type-OC",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "company-type-SO",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "company-type-NC",
+      "schema": "submission",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": []
+    },
+    {
+      "case": "company-type-ZZ",
+      "schema": "submission",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": true,
+      "expected_strict_base64_valid": true,
+      "codes": [
+        "SCHEMAV_CVC_ENUMERATION_VALID"
+      ]
+    },
+    {
+      "case": "poll-by-submission",
+      "schema": "status",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "status-accept",
+      "schema": "status",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "status-reject",
+      "schema": "status",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "status-pending",
+      "schema": "status",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "status-parked",
+      "schema": "status",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "status-internal_failure",
+      "schema": "status",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "status-unknown",
+      "schema": "status",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": [
+        "SCHEMAV_CVC_ENUMERATION_VALID"
+      ]
+    },
+    {
+      "case": "status-ack",
+      "schema": "status_ack",
+      "schema_valid": true,
+      "expected_schema_valid": true,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": []
+    },
+    {
+      "case": "wrong-status-ack-name",
+      "schema": "status_ack",
+      "schema_valid": false,
+      "expected_schema_valid": false,
+      "expectation_met": true,
+      "strict_base64_valid": null,
+      "expected_strict_base64_valid": null,
+      "codes": [
+        "SCHEMAV_CVC_ELT_1"
+      ]
+    }
+  ],
+  "submission_attempted": false,
+  "production_qualified": false
+}

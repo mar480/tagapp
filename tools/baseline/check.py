@@ -47,7 +47,28 @@ def validate_profiles(matrix: dict, source_ids: set[str]) -> list[str]:
     return errors
 
 
-def check(root: Path, *, local: bool = False, require_qualified: bool = False) -> list[str]:
+def validate_foundation(root: Path, record: dict) -> list[str]:
+    errors = []
+    readiness = record.get("foundation_readiness", {})
+    decision = readiness.get("decision", "")
+    if readiness.get("status") != "ready" or not decision or not (root / decision).is_file():
+        errors.append("Foundation readiness requires a recorded decision")
+    gates = {gate["id"]: gate for gate in record["gates"]}
+    for required in ("intake", "publication-boundary"):
+        if gates.get(required, {}).get("status") != "passed":
+            errors.append(required + ": required before foundation")
+    for name, gate in gates.items():
+        if not gate.get("evidence"):
+            errors.append(name + ": missing baseline evidence")
+        if gate["status"] != "passed":
+            assignment = readiness.get("deferred_gates", {}).get(name, {})
+            targets = assignment.get("milestones", [])
+            if not targets or any(type(n) is not int or n < 2 or n > 14 for n in targets) or not assignment.get("blocks"):
+                errors.append(name + ": unresolved gate needs an explicit later milestone and blocking condition")
+    return errors
+
+
+def check(root: Path, *, local: bool = False, require_qualified: bool = False, require_foundation_ready: bool = False) -> list[str]:
     errors = []
     sources = load(root, "docs/compliance/sources.json")["sources"]
     source_ids = {s["id"] for s in sources}
@@ -77,13 +98,15 @@ def check(root: Path, *, local: bool = False, require_qualified: bool = False) -
             proc = subprocess.run(["git", "--git-dir=" + str(mirror), "rev-parse", "refs/heads/" + repo["branch"]], capture_output=True, text=True)
             if proc.returncode or proc.stdout.strip() != repo["commit"]:
                 errors.append(repo["name"] + ": reviewed branch pin unavailable or changed")
+    if require_foundation_ready:
+        errors += validate_foundation(root, load(root, "docs/milestones/01-status.json"))
     if require_qualified:
         record = load(root, "docs/milestones/01-status.json")
         for gate in record["gates"]:
             if gate["status"] != "passed" or not gate.get("evidence"):
                 errors.append(gate["id"] + ": " + gate["status"])
         if record["status"] != "complete":
-            errors.append("Milestone 1 is not complete; dependent milestones remain gated")
+            errors.append("Full qualification remains incomplete; foundation readiness is a separate decision")
     return errors
 
 
@@ -91,9 +114,10 @@ def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--local-materials", action="store_true")
     parser.add_argument("--require-qualified", action="store_true")
+    parser.add_argument("--require-foundation-ready", action="store_true")
     args = parser.parse_args()
-    errors = check(ROOT, local=args.local_materials, require_qualified=args.require_qualified)
-    print(json.dumps({"record_consistency": "fail" if errors else "pass", "qualification_gate_checked": args.require_qualified, "local_inputs_checked": args.local_materials, "findings": errors}, indent=2))
+    errors = check(ROOT, local=args.local_materials, require_qualified=args.require_qualified, require_foundation_ready=args.require_foundation_ready)
+    print(json.dumps({"record_consistency": "fail" if errors else "pass", "qualification_gate_checked": args.require_qualified, "foundation_readiness_checked": args.require_foundation_ready, "local_inputs_checked": args.local_materials, "findings": errors}, indent=2))
     return 1 if errors else 0
 
 

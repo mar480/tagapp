@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-29",
+  "authority": "XBRL International",
+  "indexes": [
+    {
+      "id": "core",
+      "url": "https://specifications.xbrl.org/work-product-index-group-base-spec-base-spec.html",
+      "sha256": "f153ffc02370d51b2e753999d2653af3e687f32eb61318e1ba224677b2335b69"
+    },
+    {
+      "id": "dimensions",
+      "url": "https://specifications.xbrl.org/work-product-index-group-dimensions-dimensions.html",
+      "sha256": "6814b3e3beac393a3173881934b744faef3eabc590a2de60f7522e7754a6040e"
+    },
+    {
+      "id": "inline",
+      "url": "https://specifications.xbrl.org/work-product-index-inline-xbrl-inline-xbrl-1.1.html",
+      "sha256": "6499ba2607f0de18c7515f5a7eb3ba7b5c3b40b08dd95a59de45609fa7b39a44"
+    }
+  ],
+  "artifacts": [
+    {
+      "id": "core-spec",
+      "filename": "core-spec.html",
+      "url": "https://www.xbrl.org/Specification/XBRL-2.1/REC-2003-12-31/XBRL-2.1-REC-2003-12-31+corrected-errata-2013-02-20.html",
+      "size_bytes": 1119965,
+      "sha256": "0aabd01fa4c77b41e7d2aeac2845f872e53871edcffad96fc99e72ba6555501f",
+      "media": "html"
+    },
+    {
+      "id": "core-suite",
+      "filename": "core-suite.zip",
+      "url": "https://www.xbrl.org/2025/XBRL-CONF-2025-07-16.zip",
+      "size_bytes": 4928726,
+      "sha256": "00462b833fd064108d0781c601bf2b186db9b85ef950030df9db3ef2f68455e9",
+      "media": "zip",
+      "entry_point": "XBRL-CONF-2025-07-16/xbrl.xml"
+    },
+    {
+      "id": "dimensions-spec",
+      "filename": "dimensions-spec.html",
+      "url": "https://www.xbrl.org/specification/dimensions/rec-2012-01-25/dimensions-rec-2006-09-18+corrected-errata-2012-01-25-clean.html",
+      "size_bytes": 367880,
+      "sha256": "2d4d8a92ca4b2a513919890fe9d7e22923cb7d45ab4b40d435d916abb14ca6df",
+      "media": "html"
+    },
+    {
+      "id": "dimensions-suite",
+      "filename": "dimensions-suite.zip",
+      "url": "https://www.xbrl.org/2025/XBRL-XDT-CONF-2025-09-09.zip",
+      "size_bytes": 3620023,
+      "sha256": "717e17018905b51e8dbda4f7a4fefca2a9544cc762ef0e3a0806ca2aed1c0683",
+      "media": "zip",
+      "entry_point": "XBRL-XDT-CONF-2025-09-09/xdt.xml"
+    },
+    {
+      "id": "inline-spec",
+      "filename": "inline-spec.html",
+      "url": "https://www.xbrl.org/Specification/inlineXBRL-part1/REC-2013-11-18+errata-2026-07-14/inlineXBRL-part1-REC-2013-11-18+corrected-errata-2026-07-14.html",
+      "size_bytes": 227215,
+      "sha256": "a534f4a5a97fe9246c9082b44ed91759f8f90735027835a855de00bc16ade3a9",
+      "media": "html"
+    },
+    {
+      "id": "inline-schema-spec",
+      "filename": "inline-schema-spec.html",
+      "url": "https://www.xbrl.org/specification/inlinexbrl-part2/rec-2013-11-18/inlinexbrl-part2-rec-2013-11-18.html",
+      "size_bytes": 1909197,
+      "sha256": "57fede727bb84993ff1c74e347654e1eb89e4b34c990ea2ecd4955adc6562a10",
+      "media": "html"
+    },
+    {
+      "id": "inline-suite",
+      "filename": "inline-suite.zip",
+      "url": "https://www.xbrl.org/2020/inlineXBRL-1.1-conformanceSuite-2020-04-08.zip",
+      "size_bytes": 2012846,
+      "sha256": "7fdea8cc03dd42cecb83d7617cfe139eb0537e3088629964ad70c8aeca016e93",
+      "media": "zip",
+      "entry_point": "inlineXBRL-1.1-conformanceSuite-2020-04-08/index.xml"
+    }
+  ],
+  "publication": "Original suites and specifications retained locally; no redistribution clearance claimed",
+  "coverage_limit": "Inline suite 2020-04-08 predates specification errata 2026-07-14; transformation registry/profile selection and additional modules remain separate",
+  "production_qualified": false,
+  "support_artifacts": [
+    {
+      "id": "arelle-inline-config.py",
+      "filename": "arelle-inline-config.py",
+      "url": "https://raw.githubusercontent.com/Arelle/Arelle/2.44.1/tests/integration_tests/validation/conformance_suite_configurations/xbrl_ixbrl_1_1.py",
+      "size_bytes": 1585,
+      "sha256": "ee73eaaff5e9bcbed4ce01863f8ced37a3fc2efaa7cc311f210c1ee4453fab64",
+      "purpose": "Upstream test configuration reference"
+    },
+    {
+      "id": "testcaseIxExpectedHtmlFixup.py",
+      "filename": "testcaseIxExpectedHtmlFixup.py",
+      "url": "https://raw.githubusercontent.com/Arelle/Arelle/2.44.1/tests/plugin/testcaseIxExpectedHtmlFixup.py",
+      "size_bytes": 2097,
+      "sha256": "213ec0a4226ab312cc0eb9592bd849141f7a6971488845816f9889705f54dc88",
+      "purpose": "Reviewed test-only expected HTML comparison adapter; not application runtime"
+    }
+  ],
+  "inline_support": {
+    "nested_member": "inlineXBRL-1.1-conformanceSuite-2020-04-08/schemas/www.example.com.zip",
+    "filename": "example-taxonomy.zip",
+    "size_bytes": 5501,
+    "sha256": "36de26803f045a7e27c9b16f9c6eca724b33d4d11b7b437f015e7e44fa9059d5",
+    "normalizations": [
+      "Expected escaped HTML XHTML namespace declarations",
+      "Expected footnote URI resolution and space encoding",
+      "Non-Inline input diagnostic"
+    ],
+    "expected_error_overrides": false
+  }
+}

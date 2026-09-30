@@ -1,0 +1,72 @@
+name: Foundation checks
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  application:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    services:
+      postgres:
+        image: postgres:17-bookworm@sha256:639ab7ceb90e13123085b741fb31ef493fba25463002f6da665352e7b534b652
+        env:
+          POSTGRES_DB: tagger
+          POSTGRES_USER: tagger
+          POSTGRES_PASSWORD: disposable-ci-only
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U tagger -d tagger"
+          --health-interval 5s --health-timeout 3s --health-retries 20
+      rabbitmq:
+        image: rabbitmq:4.2-alpine@sha256:920aeef84def9973d06c8334f71914d8a71dba1e8b38a7b0ff126a3da8e3d3ef
+        env:
+          RABBITMQ_DEFAULT_USER: tagger
+          RABBITMQ_DEFAULT_PASS: disposable-ci-only
+        ports: ['5672:5672']
+        options: >-
+          --health-cmd "rabbitmq-diagnostics -q ping"
+          --health-interval 5s --health-timeout 5s --health-retries 30
+    env:
+      POSTGRES_HOST: 127.0.0.1
+      POSTGRES_DB: tagger
+      POSTGRES_USER: tagger
+      POSTGRES_PASSWORD: disposable-ci-only
+      TAGGER_BROKER_URL: amqp://tagger:disposable-ci-only@127.0.0.1:5672//
+      TAGGER_TEST_POSTGRES: '1'
+      TAGGER_TEST_SERVICES: '1'
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@ece7cb06caefa5fff74198d8649806c4678c61a1
+        with:
+          python-version: '3.12.8'
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: '24.17.0'
+      - name: Install pinned API dependencies
+        run: python -m pip install --require-hashes -r apps/api/requirements.txt
+      - name: Foundation gate and database/service tests
+        run: |
+          python -m tools.baseline.check --require-foundation-ready
+          python apps/api/manage.py test projects jobs --settings=config.test_settings
+          python apps/api/manage.py makemigrations --check --dry-run --settings=config.test_settings
+      - name: Check API contract drift
+        run: |
+          python apps/api/manage.py spectacular --file /tmp/tagger-openapi.yaml --validate --fail-on-warn --settings=config.test_settings
+          diff -u docs/api/openapi.yaml /tmp/tagger-openapi.yaml
+      - name: Build browser and check generated types
+        working-directory: apps/web
+        run: |
+          npm ci --ignore-scripts
+          npm rebuild esbuild
+          npm run types
+          git diff --exit-code -- src/api/schema.d.ts
+          npm run build
+          npx playwright install --with-deps chromium
+      - name: Browser acceptance with disposable state
+        run: python tools/foundation/browser_test.py
+      - name: Synthetic local restore rehearsal
+        run: python tools/foundation/restore_probe.py

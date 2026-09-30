@@ -1,7 +1,7 @@
 import copy
 import unittest
 
-from tools.baseline.check import ROOT, check, load, validate_profiles
+from tools.baseline.check import ROOT, check, load, validate_profiles, validate_foundation
 
 
 class BaselineRecordTests(unittest.TestCase):
@@ -11,6 +11,21 @@ class BaselineRecordTests(unittest.TestCase):
 
     def test_public_checkout_does_not_require_private_inputs(self):
         self.assertEqual(check(ROOT), [])
+
+    def test_foundation_ready_is_not_filing_qualification(self):
+        self.assertEqual(check(ROOT, require_foundation_ready=True), [])
+        self.assertTrue(check(ROOT, require_qualified=True))
+
+    def test_unassigned_work_cannot_disappear_from_foundation_gate(self):
+        record = load(ROOT, "docs/milestones/01-status.json")
+        del record["foundation_readiness"]["deferred_gates"]["converter-feasibility"]
+        self.assertTrue(validate_foundation(ROOT, record))
+
+    def test_publication_boundary_cannot_be_deferred(self):
+        record = load(ROOT, "docs/milestones/01-status.json")
+        next(g for g in record["gates"] if g["id"] == "publication-boundary")["status"] = "partial"
+        record["foundation_readiness"]["deferred_gates"]["publication-boundary"] = {"milestones": [14], "blocks": "Release"}
+        self.assertTrue(validate_foundation(ROOT, record))
 
     def test_unverified_candidate_cannot_enable_production(self):
         matrix = copy.deepcopy(self.matrix)

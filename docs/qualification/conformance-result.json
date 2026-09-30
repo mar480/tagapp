@@ -1,0 +1,468 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-29",
+  "inventory": {
+    "core-suite": {
+      "entry_point": "XBRL-CONF-2025-07-16/xbrl.xml",
+      "members": 1366,
+      "expanded_bytes": 49275719,
+      "testcase_files": 62,
+      "expected_variations": 606,
+      "crc": "passed"
+    },
+    "dimensions-suite": {
+      "entry_point": "XBRL-XDT-CONF-2025-09-09/xdt.xml",
+      "members": 3810,
+      "expanded_bytes": 11908171,
+      "testcase_files": 32,
+      "expected_variations": 347,
+      "crc": "passed"
+    },
+    "inline-suite": {
+      "entry_point": "inlineXBRL-1.1-conformanceSuite-2020-04-08/index.xml",
+      "members": 1398,
+      "expanded_bytes": 20663890,
+      "testcase_files": 419,
+      "expected_variations": 419,
+      "crc": "passed"
+    }
+  },
+  "processor_environment": {
+    "observed_on": "2026-09-29",
+    "timing": "After dimensions run; no processor installation changes during these runs",
+    "package_files_sha256": "f327ae54a67e5b08ef9999db5188697b50d694c5807cd25d51bf9f2fb220c989",
+    "file_count": 736,
+    "method": "sorted arelle/ distribution files, excluding pycache; compact sorted-key JSON path/bytes/sha256",
+    "python_version": "3.12.8",
+    "dependency_versions": {
+      "pillow": "12.3.0",
+      "lxml": "6.1.1",
+      "isodate": "0.7.2",
+      "numpy": "2.5.2",
+      "regex": "2026.7.19"
+    }
+  },
+  "runs": [
+    {
+      "status": "passed",
+      "reported_variations": 606,
+      "expected_variations": 606,
+      "counts": {
+        "pass": 606
+      },
+      "nonpassing": [],
+      "processor_exit_code": 0,
+      "suite": "core-suite",
+      "suite_sha256": "00462b833fd064108d0781c601bf2b186db9b85ef950030df9db3ef2f68455e9",
+      "entry_point": "XBRL-CONF-2025-07-16/xbrl.xml",
+      "processor": "arelle-release",
+      "processor_version": "2.44.1",
+      "wall_seconds": 138.483,
+      "network": "OS network namespace disabled; Arelle offline",
+      "resource_limits": {
+        "cpu_seconds": 600,
+        "wall_seconds": 720,
+        "address_space_bytes": 3221225472,
+        "file_bytes": 134217728
+      },
+      "production_qualified": false,
+      "configuration": {
+        "formula": "none",
+        "internet_connectivity": "offline",
+        "calculations": "xbrl21",
+        "plugins": []
+      },
+      "evidence_hashes": {
+        "report.csv": "8a2f95d61c7d206f326a2103ec28c49251fd20feca4e94c191dcc6b310568eea",
+        "log.xml": "088f739bfab926cb12ed8c5cde0635f5b8bff7a8ce572d3389c9485e2ccc22f0",
+        "worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "status": "passed",
+      "reported_variations": 347,
+      "expected_variations": 347,
+      "counts": {
+        "pass": 347
+      },
+      "nonpassing": [],
+      "processor_exit_code": 0,
+      "suite": "dimensions-suite",
+      "suite_sha256": "717e17018905b51e8dbda4f7a4fefca2a9544cc762ef0e3a0806ca2aed1c0683",
+      "entry_point": "XBRL-XDT-CONF-2025-09-09/xdt.xml",
+      "processor": "arelle-release",
+      "processor_version": "2.44.1",
+      "wall_seconds": 39.667,
+      "network": "OS network namespace disabled; Arelle offline",
+      "production_qualified": false,
+      "configuration": {
+        "formula": "none",
+        "internet_connectivity": "offline",
+        "calculations": "none",
+        "plugins": []
+      },
+      "evidence_hashes": {
+        "report.csv": "4f88e006f1b9d0b731a269dc96e14722f38dcf738ae5cad366f2ef2dc92c3c44",
+        "log.xml": "379abb6ac91f2349045f0872f77511c19df359e105ef9d91ea66012d00e89c85",
+        "worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "resource_limits": {
+        "cpu_seconds": 120,
+        "wall_seconds": 180,
+        "address_space_bytes": 3221225472,
+        "file_bytes": 134217728
+      }
+    },
+    {
+      "status": "unable_to_complete",
+      "reason": "missing_processor_report",
+      "processor_exit_code": -9,
+      "suite": "inline-suite",
+      "suite_sha256": "7fdea8cc03dd42cecb83d7617cfe139eb0537e3088629964ad70c8aeca016e93",
+      "entry_point": "inlineXBRL-1.1-conformanceSuite-2020-04-08/index.xml",
+      "processor": "arelle-release",
+      "processor_version": "2.44.1",
+      "wall_seconds": 600.342,
+      "network": "OS network namespace disabled; Arelle offline",
+      "resource_limits": {
+        "cpu_seconds": 600,
+        "wall_seconds": 720,
+        "address_space_bytes": 3221225472,
+        "file_bytes": 134217728
+      },
+      "production_qualified": false,
+      "configuration": {
+        "formula": "none",
+        "internet_connectivity": "offline",
+        "calculations": "none",
+        "plugins": [
+          "inlineXbrlDocumentSet"
+        ]
+      },
+      "evidence_hashes": {
+        "worker.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "production_qualified": false,
+  "initial_attempts": [
+    {
+      "suite": "core",
+      "status": "unable_to_complete",
+      "cpu_limit_seconds": 120
+    },
+    {
+      "suite": "inline",
+      "status": "unable_to_complete",
+      "cpu_limit_seconds": 120
+    },
+    {
+      "suite": "core",
+      "status": "review_required",
+      "calculation_mode": "legacy precision inference",
+      "counts": {
+        "pass": 601,
+        "fail": 5
+      },
+      "resolution": "Corrected to XBRL 2.1 decimal inference required by suite descriptions; no expected results changed"
+    }
+  ],
+  "inline_support": {
+    "nested_package_sha256": "36de26803f045a7e27c9b16f9c6eca724b33d4d11b7b437f015e7e44fa9059d5",
+    "comparison_adapter_sha256": "213ec0a4226ab312cc0eb9592bd849141f7a6971488845816f9889705f54dc88",
+    "upstream_configuration_sha256": "ee73eaaff5e9bcbed4ce01863f8ced37a3fc2efaa7cc311f210c1ee4453fab64",
+    "expected_error_overrides": false,
+    "scope": "Test-only expected HTML and footnote normalisations, plus non-Inline input diagnostic. Original suite data unchanged."
+  },
+  "grouped_inline": {
+    "suite": "inline-suite",
+    "suite_sha256": "7fdea8cc03dd42cecb83d7617cfe139eb0537e3088629964ad70c8aeca016e93",
+    "execution": "indexed groups",
+    "status": "review_required",
+    "expected_variations": 419,
+    "reported_variations": 419,
+    "counts": {
+      "pass": 418,
+      "fail": 1
+    },
+    "groups": [
+      {
+        "group": "baseURIs",
+        "status": "review_required",
+        "reported_variations": 3,
+        "expected_variations": 3,
+        "counts": {
+          "pass": 2,
+          "fail": 1
+        },
+        "nonpassing": [
+          {
+            "testcase": "PASS-baseURI-on-ix-references-multiRefs.xml",
+            "id": "V-1003",
+            "status": "fail",
+            "expected": "valid",
+            "actual": "xbrl:multipleTopLevelSchemasForNamespace"
+          }
+        ],
+        "report_sha256": "d3e5f1d971489a03509b43000cb742693e738f8c356c0ff010ef7e772c520a59",
+        "wall_seconds": 3.032
+      },
+      {
+        "group": "continuation",
+        "status": "passed",
+        "reported_variations": 19,
+        "expected_variations": 19,
+        "counts": {
+          "pass": 19
+        },
+        "nonpassing": [],
+        "report_sha256": "e92808be01c59dfc1fabbc02037ac3e9e7b615a9bfbb91bf18a84a541b1211fc",
+        "wall_seconds": 6.956
+      },
+      {
+        "group": "exclude",
+        "status": "passed",
+        "reported_variations": 5,
+        "expected_variations": 5,
+        "counts": {
+          "pass": 5
+        },
+        "nonpassing": [],
+        "report_sha256": "f2729be7af9826b884d768e62b1aeb5fccbcae02d6bc8a53893af2f34b058cdc",
+        "wall_seconds": 11.362
+      },
+      {
+        "group": "footnotes",
+        "status": "passed",
+        "reported_variations": 51,
+        "expected_variations": 51,
+        "counts": {
+          "pass": 51
+        },
+        "nonpassing": [],
+        "report_sha256": "751a37498f45340e6709ec8eacb98f42b3d62c9d13b7844648664887744627d9",
+        "wall_seconds": 121.22
+      },
+      {
+        "group": "format",
+        "status": "passed",
+        "reported_variations": 4,
+        "expected_variations": 4,
+        "counts": {
+          "pass": 4
+        },
+        "nonpassing": [],
+        "report_sha256": "11513983d0cef0083705e1049459abd21837a36a1ecfc005f84e4409f1bbbce8",
+        "wall_seconds": 23.696
+      },
+      {
+        "group": "fraction",
+        "status": "passed",
+        "reported_variations": 63,
+        "expected_variations": 63,
+        "counts": {
+          "pass": 63
+        },
+        "nonpassing": [],
+        "report_sha256": "51d0cd03cf751a74765c1206bb629bebc4873e2b895d83e77702cabcb2f912cd",
+        "wall_seconds": 226.846
+      },
+      {
+        "group": "header",
+        "status": "passed",
+        "reported_variations": 6,
+        "expected_variations": 6,
+        "counts": {
+          "pass": 6
+        },
+        "nonpassing": [],
+        "report_sha256": "a71f0042d26563eaba51a0826a1004dd996679c4321fb73de4de450f375bef53",
+        "wall_seconds": 3.983
+      },
+      {
+        "group": "hidden",
+        "status": "passed",
+        "reported_variations": 7,
+        "expected_variations": 7,
+        "counts": {
+          "pass": 7
+        },
+        "nonpassing": [],
+        "report_sha256": "c676d3cc0acf3ccd9d75b79160f6eae0ad3b8c18b10c26abb496e88a6f79f53b",
+        "wall_seconds": 3.938
+      },
+      {
+        "group": "html",
+        "status": "passed",
+        "reported_variations": 3,
+        "expected_variations": 3,
+        "counts": {
+          "pass": 3
+        },
+        "nonpassing": [],
+        "report_sha256": "e98080b0e4cad52fad9573ff5f7a10be45e6d100c0f7ae63b47fc808fde17d56",
+        "wall_seconds": 3.097
+      },
+      {
+        "group": "ids",
+        "status": "passed",
+        "reported_variations": 9,
+        "expected_variations": 9,
+        "counts": {
+          "pass": 9
+        },
+        "nonpassing": [],
+        "report_sha256": "b412b918e3528177d8edd311c88cd3c726bce74a329a7dd2e23b5d6d64aef1bc",
+        "wall_seconds": 5.142
+      },
+      {
+        "group": "multiIO",
+        "status": "passed",
+        "reported_variations": 10,
+        "expected_variations": 10,
+        "counts": {
+          "pass": 10
+        },
+        "nonpassing": [],
+        "report_sha256": "d4c28203f2af496a5d739e9e6f8ecbf6bac27678708f7944de5f9c5f097bf1b1",
+        "wall_seconds": 39.651
+      },
+      {
+        "group": "nonFraction",
+        "status": "passed",
+        "reported_variations": 62,
+        "expected_variations": 62,
+        "counts": {
+          "pass": 62
+        },
+        "nonpassing": [],
+        "report_sha256": "082f1d4a2a661513f6dfaf14b185442968ff1a79e8d60196e63f27401332471b",
+        "wall_seconds": 140.185
+      },
+      {
+        "group": "nonNumeric",
+        "status": "passed",
+        "reported_variations": 64,
+        "expected_variations": 64,
+        "counts": {
+          "pass": 64
+        },
+        "nonpassing": [],
+        "report_sha256": "122eacbc87e00d0b20a54b2d8e1292e69a6b2afe5173f7b9cb868757740ea14a",
+        "wall_seconds": 323.437
+      },
+      {
+        "group": "references",
+        "status": "passed",
+        "reported_variations": 27,
+        "expected_variations": 27,
+        "counts": {
+          "pass": 27
+        },
+        "nonpassing": [],
+        "report_sha256": "c34e92bfe11b244a428ee05cea7a40b2a2e85ee5347b40f3f33f5363c3ab8384",
+        "wall_seconds": 122.278
+      },
+      {
+        "group": "relationships",
+        "status": "passed",
+        "reported_variations": 13,
+        "expected_variations": 13,
+        "counts": {
+          "pass": 13
+        },
+        "nonpassing": [],
+        "report_sha256": "65d64709adcce3d53dfcd6ddcaf126c8f8dfec76caedc7078c196a513f6a16a0",
+        "wall_seconds": 6.291
+      },
+      {
+        "group": "resources",
+        "status": "passed",
+        "reported_variations": 6,
+        "expected_variations": 6,
+        "counts": {
+          "pass": 6
+        },
+        "nonpassing": [],
+        "report_sha256": "a5ad9df016fdeb6e1b4b435460ed5a7ed28f05f2819b1da3116bce59055195ea",
+        "wall_seconds": 3.987
+      },
+      {
+        "group": "specificationExamples",
+        "status": "passed",
+        "reported_variations": 4,
+        "expected_variations": 4,
+        "counts": {
+          "pass": 4
+        },
+        "nonpassing": [],
+        "report_sha256": "6b2a61572579cdebd135b3e99513c3292f7af8f652c1e9a46bdc0e7e1cec60c3",
+        "wall_seconds": 37.554
+      },
+      {
+        "group": "transformations",
+        "status": "passed",
+        "reported_variations": 4,
+        "expected_variations": 4,
+        "counts": {
+          "pass": 4
+        },
+        "nonpassing": [],
+        "report_sha256": "f93e73fabeabf05bffeeffe622a305cb044a1beb998be409b0680427c2c19fa4",
+        "wall_seconds": 3.435
+      },
+      {
+        "group": "tuple",
+        "status": "passed",
+        "reported_variations": 54,
+        "expected_variations": 54,
+        "counts": {
+          "pass": 54
+        },
+        "nonpassing": [],
+        "report_sha256": "0b5e6d85bc09cf45e9b701c5fccc8c7edcbc9f47013bc43a669ef3622163acd8",
+        "wall_seconds": 31.416
+      },
+      {
+        "group": "xmllang",
+        "status": "passed",
+        "reported_variations": 5,
+        "expected_variations": 5,
+        "counts": {
+          "pass": 5
+        },
+        "nonpassing": [],
+        "report_sha256": "9c8351c9fe0f893d2d65fad2f7019aab24f092344aee593b28066c0489a3b1e0",
+        "wall_seconds": 3.847
+      }
+    ],
+    "production_qualified": false,
+    "processor": "arelle-release",
+    "processor_version": "2.44.1",
+    "network": "OS network namespace disabled; Arelle offline",
+    "max_parallel_workers": 4,
+    "configuration": {
+      "plugins": [
+        "inlineXbrlDocumentSet",
+        "testcaseIxExpectedHtmlFixup.py (pinned upstream test adapter)"
+      ],
+      "package": "example-taxonomy.zip (pinned nested archive)",
+      "expected_error_overrides": false,
+      "formula": "none"
+    },
+    "resource_limits_per_worker": {
+      "cpu_seconds": 600,
+      "wall_seconds": 720,
+      "address_space_bytes": 3221225472,
+      "file_bytes": 134217728
+    }
+  },
+  "remaining_mismatch": {
+    "testcase": "baseURIs/PASS-baseURI-on-ix-references-multiRefs.xml:V-1003",
+    "diagnostic": "xbrl:multipleTopLevelSchemasForNamespace",
+    "classification": "Upstream documents one additional expected diagnostic; retained as a visible mismatch here",
+    "expected_error_overrides": false,
+    "upstream_source": "https://github.com/Arelle/Arelle/blob/2.44.1/tests/integration_tests/validation/conformance_suite_configurations/xbrl_ixbrl_1_1.py"
+  },
+  "coverage_limit": "Inline comparison adapter normalises expected text/footnotes. Suite 2020-04-08 predates Part 1 errata 2026-07-14. Not application, profile, independent-processor or Companies House qualification."
+}

@@ -35,9 +35,12 @@ MVP dependencies into the new application.
 | FRC guidance/packages | Copyrighted; review package-specific and dependency terms before redistribution; default to private administrative acquisition |
 | CH documentation | OGL v3 with exceptions; attribute derived rules and inspect schema-specific notices |
 | XBRL specifications/suites | Review each downloaded artefact's terms and pin permitted test assets |
-| RaptorXML+XBRL | Proprietary local test tool; do not bundle executable or licence |
 | Qwen/llama.cpp | Separate future model/runtime downloads; verify exact terms at AI milestone |
-| Planned application stack | Lock and audit actual transitive distributions at foundation milestone |
+| Application foundation | Exact Python/npm versions are locked; 32 Python and 84 Node entries have declared licence metadata in [foundation-dependencies.json](foundation-dependencies.json). Full notice/resource and distribution review remains required. |
+
+Independent processor comparison is optional and vendor-neutral. No second
+processor licence needs to be acquired. Review the terms of any tool selected
+for that optional activity before use or redistribution.
 
 References: [pdf2htmlEX licence](https://raw.githubusercontent.com/pdf2htmlEX/pdf2htmlEX/master/LICENSE),
 [Arelle](https://arelle.org/about/),

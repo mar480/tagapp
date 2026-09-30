@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_on": "2026-09-28",
+  "checked_on": "2026-09-29",
   "sources": [
     {
       "id": "ch-accounts",
@@ -28,7 +28,7 @@
       "verification": "Local bytes matched official download during intake",
       "issues": [
         "Conflicting version labels",
-        "Resolve GatewayTest lexical value against pinned schema"
+        "GatewayTest integer schema verified; true fails local XSD. Operational confirmation remains; see schema-baseline.md."
       ],
       "publication": "Original retained locally; derived attribution under OGL v3 subject to third-party exceptions"
     },
@@ -72,7 +72,7 @@
       "title": "Inline XBRL 1.1 work product index",
       "authority": "XBRL International",
       "url": "https://specifications.xbrl.org/work-product-index-inline-xbrl-inline-xbrl-1.1.html",
-      "verification": "Reference reviewed; specification and conformance-suite artefact pins remain outstanding"
+      "verification": "Official index checked 2026-09-29; Part 1 errata 2026-07-14, Part 2 2013-11-18 and suite 2020-04-08 pinned by size and SHA-256. Suite predates latest errata; see xbrl-conformance-pins.json and conformance-baseline.md."
     },
     {
       "id": "wcag22",
@@ -86,7 +86,7 @@
       "title": "RaptorXML+XBRL processor listing",
       "authority": "XBRL International",
       "url": "https://software.xbrl.org/processor/altova-raptorxml-xbrl-server",
-      "verification": "Listing reviewed; local licensed executable unavailable"
+      "verification": "Historical candidate listing reviewed. Mandatory RaptorXML use was removed by user decision on 2026-09-29; retained for provenance only. Independent processor comparison is optional and vendor-neutral, with no licence acquisition requirement."
     },
     {
       "id": "converter",
@@ -101,6 +101,35 @@
       "authority": "pdf2htmlEX maintainers",
       "url": "https://raw.githubusercontent.com/pdf2htmlEX/pdf2htmlEX/master/LICENSE",
       "verification": "GPLv3-or-later with separately licensed resources; distribution obligations remain to be reviewed"
+    },
+    {
+      "id": "ch-schemas",
+      "title": "Companies House XML input schema catalogue and selected transport schemas",
+      "authority": "Companies House",
+      "url": "https://xmlgw.companieshouse.gov.uk/SchemaStatus",
+      "verification": "Official catalogue checked 2026-09-29; twelve XSD files pinned; four roots compiled offline; thirty synthetic transport checks. See ch-schema-pins.json and schema-baseline.md. No gateway submission.",
+      "issues": [
+        "Envelope not separately listed in the current status table",
+        "GetSubmissionStatus-v2-9.xsd declares internal version 2.8",
+        "Filing TIS true conflicts with integer GatewayTest XSD; schema-valid candidate 1 still requires operational test confirmation"
+      ],
+      "publication": "Original schemas retained locally; derived findings and hash metadata only"
+    },
+    {
+      "id": "xbrl21",
+      "title": "XBRL 2.1 work product index",
+      "authority": "XBRL International",
+      "url": "https://specifications.xbrl.org/work-product-index-group-base-spec-base-spec.html",
+      "verification": "Official index checked 2026-09-29; specification and 2025 suite pinned by size and SHA-256 in xbrl-conformance-pins.json. See conformance-baseline.md for execution limits.",
+      "publication": "Originals retained locally; derived findings and hash metadata only"
+    },
+    {
+      "id": "xbrl-dimensions",
+      "title": "XBRL Dimensions 1.0 work product index",
+      "authority": "XBRL International",
+      "url": "https://specifications.xbrl.org/work-product-index-group-dimensions-dimensions.html",
+      "verification": "Official index checked 2026-09-29; specification and 2025 suite pinned by size and SHA-256 in xbrl-conformance-pins.json. See conformance-baseline.md for execution limits.",
+      "publication": "Originals retained locally; derived findings and hash metadata only"
     }
   ]
 }

@@ -35,17 +35,23 @@ its separate copyright review.
 
 ## Qualification work remaining
 
-1. Obtain and hash complete official taxonomy, schema and conformance-suite
-   assets; inspect archive paths/manifests and test offline dependency closure.
+1. Complete transformation-registry/profile selection and later-errata coverage.
+   Core, dimensions and Inline specification/suite bytes are now pinned; see
+   [conformance baseline](conformance-baseline.md). The twelve-file CH transport
+   schema closure is pinned and compiles offline; see [schema baseline](schema-baseline.md).
+   FRC entry-point loading evidence remains separate from full conformance.
 2. Review legal eligibility and exceptions per candidate/framework with effective
    dates; split candidate rows into exact versioned profiles.
-3. Resolve auditor-concept changes, TIS date/version labels and `GatewayTest`
-   lexical values against pinned schemas and authoritative guidance.
+3. Resolve auditor-concept changes and TIS date/version labels. `GatewayTest`
+   integer lexical constraints are now tested; the conflicting prose and operational
+   test-mode behaviour still require gateway confirmation at the filing milestone.
 4. Generate substantial synthetic FRS102 accounts and companion FRS101, IFRS,
    LLP and micro fixtures. Each supported profile needs positive and deliberate
    negative cases. The small processor probe does not satisfy this requirement.
-5. Record processor, independent-processor and Companies House results at their
-   relevant milestones, with exact hashes, versions, findings and receipts.
+5. Record Arelle, conformance, generated-fact comparison and Companies House
+   results at their relevant milestones, with exact hashes, versions, findings
+   and receipts. Independent processor comparison is optional and vendor-neutral;
+   it is not a development, export or release prerequisite.
 
 Entry-point URLs are identifiers/acquisition references. Processing workers must
 load pinned local packages rather than fetch dependencies during report handling.

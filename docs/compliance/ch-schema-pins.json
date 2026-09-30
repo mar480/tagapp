@@ -1,0 +1,150 @@
+{
+  "schema_version": 1,
+  "observed_on": "2026-09-29",
+  "authority": "Companies House",
+  "catalogue": {
+    "url": "https://xmlgw.companieshouse.gov.uk/SchemaStatus",
+    "sha256": "23d9095d2797ea2b330714fc7be8b55660bdb969b63eca5f700cdf74efcfb232",
+    "size_bytes": 128331
+  },
+  "roots": {
+    "envelope": "Egov_ch-v2-0.xsd",
+    "submission": "forms/FormSubmission-v2-11.xsd",
+    "status": "forms/GetSubmissionStatus-v2-9.xsd",
+    "status_ack": "forms/GetStatusAck-v1-1.xsd"
+  },
+  "catalogue_status": {
+    "submission": "live",
+    "status": "live",
+    "status_ack": "live",
+    "envelope": "Not listed in the current status table; retrieved directly from the official schema host"
+  },
+  "files": [
+    {
+      "path": "Egov_ch-v2-0.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/Egov_ch-v2-0.xsd",
+      "sha256": "27ed00933423964f3e00c165fcdfe975632aaf58cacde31c2c9241638afd51a1",
+      "size_bytes": 11303,
+      "target_namespace": "http://www.govtalk.gov.uk/CM/envelope",
+      "declared_version": "2.0",
+      "dependencies": []
+    },
+    {
+      "path": "baseTypes-v1-1.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/baseTypes-v1-1.xsd",
+      "sha256": "93d54a3850907207cba39ede010677b2d11d4ffaeb11b10d2c6ba09e213b7759",
+      "size_bytes": 47246,
+      "target_namespace": "http://xmlgw.companieshouse.gov.uk",
+      "declared_version": "1.1",
+      "dependencies": []
+    },
+    {
+      "path": "baseTypes-v3-4.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/baseTypes-v3-4.xsd",
+      "sha256": "c6c987305e9b3d70522b7ad127b18b778f6d8cc90c03ac7c8b766740ff95c79a",
+      "size_bytes": 78253,
+      "target_namespace": "http://xmlgw.companieshouse.gov.uk",
+      "declared_version": "3.0",
+      "dependencies": [
+        "vocabularies/iso3currency_all.xsd",
+        "vocabularies/iso3currency_current.xsd"
+      ]
+    },
+    {
+      "path": "forms/FormSubmission-v2-11.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/forms/FormSubmission-v2-11.xsd",
+      "sha256": "57aac40066b002f772adbf9a880dfe337aea3253c13451509bc34f89f6fa991c",
+      "size_bytes": 8551,
+      "target_namespace": "http://xmlgw.companieshouse.gov.uk/Header",
+      "declared_version": "2.11",
+      "dependencies": []
+    },
+    {
+      "path": "forms/GetStatusAck-v1-1.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/forms/GetStatusAck-v1-1.xsd",
+      "sha256": "b1bffebb5c5aff2fbc5218ae9f4eb0b8914a8687704ea1ed17b0abf103bf5b6a",
+      "size_bytes": 726,
+      "target_namespace": "http://xmlgw.companieshouse.gov.uk",
+      "declared_version": "1.1",
+      "dependencies": [
+        "../baseTypes-v1-1.xsd"
+      ]
+    },
+    {
+      "path": "forms/GetSubmissionStatus-v2-9.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/forms/GetSubmissionStatus-v2-9.xsd",
+      "sha256": "bfb920a8df64604a47aacb864d090da98e597f971ce526865707557995418054",
+      "size_bytes": 4044,
+      "target_namespace": "http://xmlgw.companieshouse.gov.uk",
+      "declared_version": "2.8",
+      "dependencies": [
+        "../baseTypes-v3-4.xsd"
+      ]
+    },
+    {
+      "path": "vocabularies/iso3currency_all.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/vocabularies/iso3currency_all.xsd",
+      "sha256": "a5ad0b8af62f8cd9c2f6a149d5852b145d283f9bbdddd988e3273b5a5d7e4ff8",
+      "size_bytes": 165,
+      "target_namespace": null,
+      "declared_version": null,
+      "dependencies": [
+        "iso3currency_all-v1-0.xsd"
+      ]
+    },
+    {
+      "path": "vocabularies/iso3currency_current.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/vocabularies/iso3currency_current.xsd",
+      "sha256": "c5dad0b14eab917d04bb38f0964eb55a98b3b4050c99db6f69b306b33d05e11b",
+      "size_bytes": 166,
+      "target_namespace": null,
+      "declared_version": null,
+      "dependencies": [
+        "iso3currency_current-v1-0.xsd"
+      ]
+    },
+    {
+      "path": "vocabularies/iso3currency_all-v1-0.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/vocabularies/iso3currency_all-v1-0.xsd",
+      "sha256": "c761fe55ab83c26114f624eced58bc6106f06aff72938e4c6db077826679b8be",
+      "size_bytes": 360,
+      "target_namespace": null,
+      "declared_version": "1.0",
+      "dependencies": [
+        "iso3currency_current.xsd",
+        "iso3currency_legacy.xsd"
+      ]
+    },
+    {
+      "path": "vocabularies/iso3currency_current-v1-0.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/vocabularies/iso3currency_current-v1-0.xsd",
+      "sha256": "7881245e406b25c4aa1793c31fc16ea6f93b64a0fe107d8be998bdb82043620f",
+      "size_bytes": 11807,
+      "target_namespace": null,
+      "declared_version": "1.0",
+      "dependencies": []
+    },
+    {
+      "path": "vocabularies/iso3currency_legacy.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/vocabularies/iso3currency_legacy.xsd",
+      "sha256": "4e536f5351bfdf3ec3b900cd1dbcfe4cf01fcbffab88ffb935c22125eb8ad3fb",
+      "size_bytes": 165,
+      "target_namespace": null,
+      "declared_version": null,
+      "dependencies": [
+        "iso3currency_legacy-v1-0.xsd"
+      ]
+    },
+    {
+      "path": "vocabularies/iso3currency_legacy-v1-0.xsd",
+      "url": "https://xmlgw.companieshouse.gov.uk/v1-0/schema/vocabularies/iso3currency_legacy-v1-0.xsd",
+      "sha256": "62dd6db78ec98f56c222358b5cac9bacb81b3977cf8621c26603ba767a99d34d",
+      "size_bytes": 465,
+      "target_namespace": null,
+      "declared_version": "1.0",
+      "dependencies": []
+    }
+  ],
+  "publication": "Original schemas retained locally; public record contains hashes and derived metadata only",
+  "production_qualified": false
+}

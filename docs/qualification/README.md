@@ -277,3 +277,43 @@ four have repeated matches requiring review. No report bytes were changed.
 See [punctuation evidence and reproduction](punctuation-decision.md). This is a
 known conversion/repair requirement, not a reason to keep rebuilding the converter
 or to silently accept the differences.
+
+## Companies House transport schemas
+
+The [schema baseline](../compliance/schema-baseline.md) pins twelve official XSDs
+and records thirty offline synthetic checks across envelope, wrapper and polling.
+These checks use no credentials, contain no report data and make no submissions.
+Schema success is kept distinct from attachment, filing-profile and gateway acceptance.
+
+
+## XBRL conformance suites
+
+The [conformance baseline](../compliance/conformance-baseline.md) records exact
+specification/suite selections, offline execution boundaries and coverage limits.
+The original archives and processor logs remain under ignored
+`.local/qualification/xbrl-conformance/`.
+
+```sh
+# Administrative acquisition only; reuse present files after verifying exact bytes.
+python3 -m tools.baseline.conformance --acquire
+# Inventory only, with no processor dependency or network access.
+python3 -m tools.baseline.conformance
+# Use a Python environment containing arelle-release==2.44.1 and Linux unshare.
+python -m tools.baseline.conformance --run core
+python -m tools.baseline.conformance --run dimensions
+# The full Inline run exceeded its finite CPU budget on the baseline host.
+# Grouped execution keeps every official testcase, with at most four workers.
+python -m tools.baseline.conformance --list-inline-groups | \
+  xargs -r -n1 -P4 python -m tools.baseline.conformance --run inline --inline-group
+python -m tools.baseline.conformance --summarize-inline
+```
+
+A nonzero suite exit must be investigated. It must not be waived by the ordinary
+unit tests or by successful loading of the FRC taxonomy. No credentials or
+unpublished report data are used by these runs. Downloading dependencies and
+archives is separate from network-disabled report/suite processing.
+
+[Conformance results](conformance-result.json) distinguish full-suite attempts
+from grouped Inline results. The Inline comparison uses pinned upstream test
+normalisations; see the baseline for the exact scope. Nonzero exits are retained
+when the processor reports a mismatch, including the documented base-URI case.
